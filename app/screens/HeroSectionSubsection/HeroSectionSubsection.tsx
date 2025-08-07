@@ -1,0 +1,238 @@
+'use client'
+import { ChevronDownIcon, ChevronRightIcon } from "lucide-react";
+import { Button } from "../../components/ui/button";
+import { Card, CardContent } from "../../components/ui/card";
+import {
+  Select,
+  SelectTrigger,
+  SelectValue,
+} from "../../components/ui/select";
+import { useState } from "react";
+
+export default function HeroSectionSubsection  () {
+                
+  const [activeMenu, setActiveMenu] = useState("/");
+            
+const menuItems = [
+  { name: "Home", id: "/" },
+  { name: "About", id: "about" },
+  { name: "Find Doctor", id: "departments" },
+  { name: "Blog", id: "blog" },
+  { name: "Contact", id: "contact" },
+];
+  const bookingOptions = [
+    {
+      label: "Date",
+      value: "August 23, 2023",
+      icon: "/icon-date.png",
+    },
+    {
+      label: "Specialization",
+      value: "Cardiology",
+      icon: "/icon-specialization.png",
+      hasDropdown: true,
+    },
+    {
+      label: "Location",
+      value: "New York, US",
+      icon: "/icon-location.png",
+    },
+  ];
+
+
+
+  const [City, setToCity] = useState("Cardiology");
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
+const CustomDropdown = ({
+  options,
+  selected,
+  setSelected,
+}: {
+  options: string[];
+  selected: string;
+  setSelected: (value: string) => void;
+}) => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="relative w-full max-w-[186px] max-[1000px]:max-w-full z-20">
+      <div
+        onClick={() => setOpen(!open)}
+        className=" z-10 bg-transparent font-['Poppins'] font-normal opacity-60 text-dark-blue text-[20px] leading-[26px] border-none rounded-[10px]  py-1 cursor-pointer flex justify-between items-center gap-10"
+      >
+        <span>{selected}</span>
+        <svg
+          className="w-6 h-6 text-gray-500"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+      {open && (
+        <ul className="absolute top-full mt-1 w-full bg-white rounded-[10px] shadow z-40  max-[500px]:top-[-100px]">
+          {options.map((option) => (
+            <li
+              key={option}
+              onClick={() => {
+                setSelected(option);
+                setOpen(false);
+              }}
+              className="px-4 py-2 opacity-60 hover:bg-[#eafff7] hover:text-white cursor-pointer  text-dark-blue font-['Poppins'] font-normal  text-[20px] leading-[26px] max-[500px]:py-3"
+            >
+              {option}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+};
+
+
+
+
+
+
+  return (
+    <section className="relative w-full h-[1203px] max-[1500px]:h-[900px] max-[1100px]:h-[1000px] max-[1022px]:h-auto">
+      <div className="relative w-full h-[1097px] max-[1500px]:h-[800px] max-[1022px]:h-[450px] max-[767px]:h-[500px] bg-custom-gradient ">
+                      <img src="/vector-3.png" className="absolute bottom-0 left-0 w-[623px] h-[655px] z-0" alt="" />
+               <img src="/vector-2.png" className="absolute -top-[200px] right-0 w-[623px] h-[655px] z-0 max-[800px]:hidden" alt="" />
+               <img src="/vector-1.png" className="absolute top-[50px] -right-[200px] w-[872px] h-[1030px] z-0 max-[800px]:hidden" alt="" />
+        {/* Background image would go here */}
+         <div className="w-full h-auto bg-[url('/blur-back.jpg')]"/>
+        {/* Navigation */}
+ <div className="-full z-50   backdrop-blur-md px-[150px] max-[1500px]:px-[50px] max-[1000px]:px-[25px] pt-[59px] max-[1000px]:pt-[30px] flex justify-between items-center ">
+      <div className="w-full flex items-center gap-[124px]">
+        <div className="w-[173px] h-[28px] max-[767px]:w-[130px]">
+          <img src="/logo.svg" alt="" className="w-full h-full object-contain" />
+        </div>
+
+        <div
+          className={`gap-[50px] flex max-[1250px]:absolute max-[1250px]:top-[100px] max-[1250px]:left-0 max-[1250px]:w-full max-[1250px]:bg-white max-[1250px]:flex-col max-[1250px]:items-center max-[1250px]:py-6 max-[1250px]:gap-6 z-50 transition-all duration-300 ${
+            isMenuOpen ? "max-[1250px]:flex" : "max-[1250px]:hidden"
+          }`}
+        >
+          {menuItems.map((item, index) => (
+            <div
+              key={index}
+              onClick={() => {
+                const section = document.getElementById(item.id);
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                  setActiveMenu(item.id);
+                  setIsMenuOpen(false);
+                }
+              }}
+              className={`font-['Poppins'] text-base leading-[26px] cursor-pointer ${
+                activeMenu === item.id ? "text-[#083124] font-semibold" : "text-[#083124] font-normal"
+              }`}
+            >
+              {item.name}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="relative flex items-center justify-between w-[107px]">
+        <img className="w-[29.34px] h-[29.34px] max-[767px]:w-[25px] max-[767px]:h-[25px]" src="/search.png" alt="Icon" />
+        <div onClick={() => setIsMenuOpen(!isMenuOpen)} className="cursor-pointer block">
+          <img className="w-[29.34px] h-[29.34px] max-[767px]:w-[25px] max-[767px]:h-[25px] absolute right-0 top-0 z-50" src="/vector.png" alt="Menu Toggle" />
+        </div>
+      </div>
+    </div>
+
+        {/* Hero Content */}
+
+         <div className="absolute top-[163px] right-[107px] w-[872px] max-[1500px]:w-[600px] max-[1500px]:h-[850px] h-[934px] max-[1500px]:top-[50px] max-[1500px]:right-[50px] max-[1100px]:w-[400px] max-[1100px]:top-[150px] max-[1022px]:hidden">
+              <img src="/doctor-img.png" className="w-full h-full object-contain" alt="" />
+         </div>
+        <div className="relative flex w-full mt-[189px] max-[1500px]:mt-[100px] max-[1000px]:mt-[40px] pl-[150px] max-[1500px]:px-[50px] max-[1022px]:px-[25px]">
+                       
+          <div className="w-[912px] max-[1500px]:w-[612px] max-[1022px]:w-[100%] flex flex-col items-start max-[1022px]:items-center">
+                 <div className="w-full flex flex-col gap-[29px]">
+                                   <h1 className="w-[908px] max-[1500px]:w-[600px] max-[1022px]:w-[100%] max-[1022px]:text-center max-[1022px]:text-[36px] max-[1022px]:leading-[48px]  font-bold text-[94px] max-[1500px]:text-[72px] max-[1500px]:leading-[82px] font-['Figtree'] text-[#083023] leading-[104px] tracking-[0%]">
+              Your Partner in Health and Wellness
+            </h1>
+
+            <p className="w-[646px] max-[1500px]:w-[550px] max-[1022px]:w-[100%]  font-['Poppins'] font-normal text-[20px] max-[767px]:text-[16px] max-[767px]:leading-[26px] text-[#083124] leading-[30px] max-[1022px]:text-center">
+              We are committed to providing you with the best medical and
+              healthcare services to help you live healthier and happier.
+            </p>
+                 </div>
+
+            <Button
+              variant="ghost"
+              className="mt-[100px] max-[1500px]:mt-[50px] max-[767px]:mt-[30px]  p-0 h-auto flex items-center gap-4 hover:bg-transparent"
+            >
+              <div className="w-[50px] h-[50px] relative">
+                <img className="w-full h-full" src='/video-logo.png' alt="Vector" />
+              </div>
+              <span className="font-['Poppins'] font-normal leading-[30px] text-xl text-[#083124]">
+                See how we work
+              </span>
+            </Button>
+          </div>
+
+          <div className="absolute w-[1044px] max-[1500px]:w-[850px] h-[300px] top-[208px] right-[134px] max-[1500px]:top-[140px] max-[1500px]:right-[50px] max-[1300px]:hidden">
+            {/* Background decorative elements */}
+
+            {/* Stats */}
+            <div className="relative ">
+              {/* Patient Recover Card */}
+                 <img src="element 2.png" className="absolute top-0 right-0 w-[224px] h-[242px]" alt="" />
+
+              {/* Doctors Card */}
+                     <img src="/element 1.png" className=" absolute top-[196px] left-0 w-[384px] h-[104px]" alt="" />
+            </div>
+          </div>
+        </div>
+
+        {/* Booking Section */}
+      </div>
+           <Card className="absolute top-[991px] max-[1500px]:top-[720px] max-[1022px]:top-[520px] max-[1022px]:hidden z-10 left-1/2 -translate-x-1/2    w-full max-w-[1620px] max-[1500px]:max-w-[1320px] max-[1500px]:max-w-[1120px] max-[1100px]:max-w-[800px]   h-[212px] max-[1100px]:h-auto bg-[#eafff7] rounded-[15px] [box-shadow:0px_4px_21px_1px_#307BC41A] border-none">
+          <CardContent className="flex items-center justify-center h-full p-0">
+            <div className="flex items-center w-full justify-between px-[114px] max-[1500px]:px-[50px] max-[500px]:px-[25px]  max-[1100px]:flex-wrap  max-[1100px]:justify-between max-[767px]:flex-col max-[1100px]:items-start  max-[1100px]:gap-[30px] max-[1100px]:py-[30px]">
+              {bookingOptions.map((option, index) => (
+                <div key={index} className="flex items-center gap-6">
+                  <img
+                    className="w-[70px] h-[70px]"
+                    alt={`${option.label} Icon`}
+                    src={option.icon}
+                  />
+
+                  <div className="flex flex-col">
+                    <span className="font-['Poppins'] font-semibold text-dark-blue text-base leading-[26px]">
+                      {option.label}
+                    </span>
+
+                    {option.hasDropdown ? (
+                              <CustomDropdown
+                      options={["Cardiology", "Emergency", "Nurogest", "Dialysis"]}
+                      selected={City}
+                      setSelected={setToCity}
+        />
+                    ) : (
+                      <span className="font-['Poppins'] font-normal text-dark-blue text-xl leading-[26px] opacity-60 mt-1">
+                        {option.value}
+                      </span>
+                    )}
+                  </div>
+                </div>
+              ))}
+
+              <Button className="w-[163px] h-[50px] bg-[#64cfa9] rounded-3xl shadow-button-drop-shadow">
+                <span className="font-['Poppins'] font-medium text-[#eafff7] text-base tracking-[0.24px] leading-[26px]">
+                  Book Now
+                </span>
+                 <img src="/right-arrow.png" className="w-[14px] h-[10px]" alt="" />
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+    </section>
+  );
+};
