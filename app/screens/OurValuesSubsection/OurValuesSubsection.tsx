@@ -50,7 +50,7 @@ export default function OurValuesSubsection() {
             <CardContent className="p-0">
               <div className="relative p-6 sm:p-8 md:py-[70px] md:px-[47px]">
                 <div className="flex flex-col items-center sm:gap-[62px] gap-10 transition-all duration-300 md:hover:gap-[40px] ">
-                  <div className="flex items-center  justify-center p-4 rounded-[30px] transition-all duration-300 group-hover:bg-[#d5f5ec] group-hover:w-[465px] max-[500px]:group-hover:w-[95%]">
+                  <div className="flex items-center  justify-center p-4 rounded-[30px] transition-all duration-300 group-hover:bg-[#d5f5ec] group-hover:max-w-[465px] ">
                     <div className="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] mr-4 sm:mr-5">
                       <img src={card.icon} alt={`${card.title}-pic`} />
                     </div>
