@@ -138,9 +138,9 @@ const CustomDropdown = ({
       </div>
 
       <div className="relative flex items-center justify-between w-[107px]">
-        <img className="w-[29.34px] h-[29.34px] max-[767px]:w-[25px] max-[767px]:h-[25px]" src="/search.png" alt="Icon" />
+        <img className="w-[29.34px] h-[29.34px] max-[767px]:w-[25px] max-[767px]:h-[25px]" src="/Search.png" alt="Icon" />
         <div onClick={() => setIsMenuOpen(!isMenuOpen)} className="cursor-pointer block">
-          <img className="w-[29.34px] h-[29.34px] max-[767px]:w-[25px] max-[767px]:h-[25px] absolute right-0 top-0 z-51" src="vector.png" alt="Menu Toggle" />
+          <img className="w-[29.34px] h-[29.34px] max-[767px]:w-[25px] max-[767px]:h-[25px] absolute right-0 top-0 z-51" src="/menu.png" alt="Menu Toggle" />
         </div>
       </div>
     </div>

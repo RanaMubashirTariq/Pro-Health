@@ -16,7 +16,7 @@ export default function Home() {
     const partnerLogos = [
     {
       type: "image",
-      src: '/logo.png',
+      src: '/Logo.png',
       width: "274.75px",
       height: "89px",
       alt: "Group",
