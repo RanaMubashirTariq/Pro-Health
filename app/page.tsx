@@ -65,24 +65,24 @@ export default function Home() {
        <div id="blog"> <OurBlogsSubsection/> </div>
        <div id="contact"> <AppointmentSubsection/> </div>
        <FaqSubsection/>
-                   <div className="flex flex-col gap-[41px] w-full max-w-[1233px] mx-auto max-[1500px]:px-[50px] max-[1500px]:gap-[20px] max-[1000px]:px-[25px]">
-                                        <div className="overflow-hidden w-full ">
-                <div className="flex gap-[42px] max-[1000px]:gap-[20px] whitespace-nowrap animate-marquee-ltr min-w-max">
-               {[...partnerLogos, ...partnerLogos, ...partnerLogos, ...partnerLogos, ...partnerLogos, ...partnerLogos].map((logo, index) => (
-             <div key={index} className="flex items-center">
-        <div
-          className="relative flex items-center justify-center w-[274.75px] h-[89px] max-[1000px]:w-[200px] max-[1000px]:h-[60px]"
-        >
-          <img
-            className="w-full h-full object-contain max-[1000px]:w-[200px] max-[1000px]:h-[60px]"
-            alt={logo.alt}
-            src={logo.src}
-          />
-        </div>
-      </div>
-    ))}
-  </div>
-                                      </div>
+                   <div className="flex flex-col items-start gap-[41px] w-full max-w-[1233px] mx-auto max-[1500px]:px-[50px] max-[1500px]:gap-[20px] max-[1000px]:px-[25px]">
+                                            <div className="overflow-hidden w-full ">
+                                  <div className="flex gap-[42px] max-[1000px]:gap-[20px] whitespace-nowrap animate-marquee-ltr min-w-max">
+                                {[...partnerLogos, ...partnerLogos, ...partnerLogos, ...partnerLogos, ...partnerLogos, ...partnerLogos].map((logo, index) => (
+                              <div key={index} className="flex items-center">
+                          <div
+                            className="relative flex items-center justify-center w-[274.75px] h-[89px] max-[1000px]:w-[200px] max-[1000px]:h-[60px]"
+                          >
+                            <img
+                              className="w-full h-full object-contain "
+                              alt={logo.alt}
+                              src={logo.src}
+                            />
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                                 </div>
 
                                  {/* Section 2 */}
 

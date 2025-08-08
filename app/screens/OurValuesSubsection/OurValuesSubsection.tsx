@@ -48,9 +48,9 @@ export default function OurValuesSubsection() {
             className="group bg-[#64cfa91a] rounded-[25px] max-[800px]:w-[80%] max-[500px]:w-[100%]  w-[390px] h-auto [box-shadow:0px_4px_21px_1px_#307BC41A] border-none transition-all duration-300"
           >
             <CardContent className="p-0">
-              <div className="relative p-6 sm:p-8 md:py-[70px] md:px-[47px]">
+              <div className="relative p-6 sm:p-8 md:py-[70px] md:px-[47px] z-50">
                 <div className="flex flex-col items-center sm:gap-[62px] gap-10 transition-all duration-300 md:hover:gap-[40px] ">
-                  <div className="flex items-center  justify-center p-4 rounded-[30px] transition-all duration-300 group-hover:bg-[#d5f5ec] group-hover:max-w-[465px] max-[500px]:group-hover:w-[100%]">
+                  <div className="flex items-center  justify-center p-4 rounded-[30px] transition-all duration-300 group-hover:bg-[#d5f5ec] group-hover:w-[465px] max-[500px]:group-hover:w-[100%]">
                     <div className="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] mr-4 sm:mr-5">
                       <img src={card.icon} alt={`${card.title}-pic`} />
                     </div>
