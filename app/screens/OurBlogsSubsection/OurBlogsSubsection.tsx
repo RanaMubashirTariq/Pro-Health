@@ -67,7 +67,7 @@ export default function OurBlogsSubsection() {
                   <img
                     className="w-[110px] h-[30px] max-[1000px]:h-[20px]  max-[1000px]:w-[80px]"
                     alt="Frame"
-                    src="/frame-218.png"
+                    src="/Frame-218.png"
                   />
                 </div>
                 <h4 className="font-['Figtree'] max-[1500px]:text-[24px] max-[1500px]:leading-[38px] text-[32px] leading-[42px] text-[#083124] mb-[28px]">

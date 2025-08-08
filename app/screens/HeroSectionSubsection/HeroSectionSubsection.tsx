@@ -99,9 +99,9 @@ const CustomDropdown = ({
   return (
     <section className="relative w-full h-[1203px] max-[1500px]:h-[900px] max-[1100px]:h-[1000px] max-[1022px]:h-auto">
       <div className="relative w-full h-[1097px] max-[1500px]:h-[800px] max-[1022px]:h-[450px] max-[767px]:h-[500px] bg-custom-gradient ">
-                      <img src="/vector-3.png" className="absolute bottom-0 left-0 w-[623px] h-[655px] z-0" alt="" />
-               <img src="/vector-2.png" className="absolute -top-[200px] right-0 w-[623px] h-[655px] z-0 max-[800px]:hidden" alt="" />
-               <img src="/vector-1.png" className="absolute top-[50px] -right-[200px] w-[872px] h-[1030px] z-0 max-[800px]:hidden" alt="" />
+                      <img src="/Vector-3.png" className="absolute bottom-0 left-0 w-[623px] h-[655px] z-0" alt="" />
+               <img src="/Vector-2.png" className="absolute -top-[200px] right-0 w-[623px] h-[655px] z-0 max-[800px]:hidden" alt="" />
+               <img src="/Vector-1.png" className="absolute top-[50px] -right-[200px] w-[872px] h-[1030px] z-0 max-[800px]:hidden" alt="" />
         {/* Background image would go here */}
          <div className="w-full h-auto bg-[url('/blur-back.jpg')]"/>
         {/* Navigation */}

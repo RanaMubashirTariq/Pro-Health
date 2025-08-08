@@ -221,7 +221,7 @@ export default function AppointmentSubsection  () {
         </div>
       </div>
              <div className="w-[1376px] h-full absolute top-0 right-0 z-0">
-                      <img src="/vector-7.png" className="absolute top-[200px] max-[1500px]:top-[100px] max-[1000px]:py-[40px] -right-[200px] w-[1049px] h-[1050px]    z-0" alt="" />
+                      <img src="/Vector-7.png" className="absolute top-[200px] max-[1500px]:top-[100px] max-[1000px]:py-[40px] -right-[200px] w-[1049px] h-[1050px]    z-0" alt="" />
                   <img src="/appointment-doctor.jpg" className="absolute top-[370px] right-[150px] w-[599px] h-[745px] rounded-[30px] max-[1600px]:hidden" alt="" />
              </div>
     </section>

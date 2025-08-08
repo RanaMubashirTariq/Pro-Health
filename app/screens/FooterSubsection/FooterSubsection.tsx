@@ -25,7 +25,7 @@ export default function FooterSubsection  () {
 
   return (
           <div className="relative w-full h-[756px] max-[1300px]:h-[900px] max-[1000px]:h-[850px] max-[767px]:h-[1100px] max-[500px]:h-[1130px] max-[410px]:h-[1150px] max-[350px]:h-[1450px]">
-                   <footer className=" w-full  h-[756px] max-[1300px]:h-[1000px] max-[767px]:h-[1020px] max-[500px]:h-[1080px] max-[350px]:h-[1380px] bg-transparent  pt-[240px] max-[1000px]:pt-[180px]  absolute top-0 left-1/2 -translate-x-1/2 bg-[url('/vector-8.png')] bg-cover bg-no-repeat bg-center">
+                   <footer className=" w-full  h-[756px] max-[1300px]:h-[1000px] max-[767px]:h-[1020px] max-[500px]:h-[1080px] max-[350px]:h-[1380px] bg-transparent  pt-[240px] max-[1000px]:pt-[180px]  absolute top-0 left-1/2 -translate-x-1/2 bg-[url('/Vector-8.png')] bg-cover bg-no-repeat bg-center">
                     <img src="/logo-4.png" className="absolute -top-[96px] left-1/2 -translate-x-1/2 w-[258px] h-[279px] object-cover" alt="" />
 
 
