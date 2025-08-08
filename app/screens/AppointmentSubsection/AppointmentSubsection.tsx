@@ -41,7 +41,7 @@ export default function AppointmentSubsection  () {
   });
 
   return (
-    <section className="relative w-full py-[249px] max-[1500px]:py-[100px] max-[1000px]:py-[40px] mt-16 max-[1000px]:px-[25px]  max-[1500px]:px-[50px]">
+    <section className="relative w-full py-[249px] max-[1500px]:py-[100px] max-[1000px]:py-[40px] mt-16 max-[1880px]:px-[150px] max-[1780px]:px-[100px] max-[1750px]:px-[100px]  max-[1000px]:px-[25px]  max-[1500px]:px-[50px]">
       <div className="relative z-10 container mx-auto ">
         <div className="flex flex-col mb-12">
           <h3 className="font-semibold text-[#00b67a] max-[767px]:text-[24px] max-[767px]:leading-[34px] text-[32px] max-[767px]:text-center leading-[50px]">
@@ -52,7 +52,7 @@ export default function AppointmentSubsection  () {
           </h2>
         </div>
 
-        <div className=" w-full max-w-[800px] ">
+        <div className=" w-full max-w-[800px] max-[1750px]:max-w-[730px] max-[1600px]:max-w-[600px] max-[1300px]:max-w-[800px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {/* Name Field */}
             <div className="flex flex-col gap-3">
@@ -65,7 +65,7 @@ export default function AppointmentSubsection  () {
               <Input
                 id="name"
                 defaultValue="David John"
-                className="h-20 rounded-[30px] font-['Poppins']  border-[#083124] opacity-50 px-8 py-[27px] max-[767px]:py-[10px] max-[767px]:h-15 font-normal text-[#083124] text-base leading-[26px]"
+                className="h-20 rounded-[30px]  font-['Poppins']  border-[#083124] opacity-50 px-8 py-[27px] max-[767px]:h-15 max-[767px]:py-[10px] max-[1300px]:h-10 font-normal text-[#083124] text-base leading-[26px]"
               />
             </div>
 
@@ -80,7 +80,7 @@ export default function AppointmentSubsection  () {
               <Input
                 id="phone"
                 defaultValue="(123) 456 - 789"
-                className="h-20 rounded-[30px] font-['Poppins']  border-[#083124] opacity-50 px-8 py-[27px] max-[767px]:py-[10px] max-[767px]:h-15 font-normal text-[#083124] text-base leading-[26px]"
+                className="h-20 rounded-[30px] font-['Poppins']  border-[#083124] opacity-50 px-8 py-[27px] max-[767px]:h-15 max-[767px]:py-[10px] max-[1300px]:h-10 font-normal text-[#083124] text-base leading-[26px]"
               />
             </div>
 
@@ -95,7 +95,7 @@ export default function AppointmentSubsection  () {
               <Input
                 id="medical-record"
                 defaultValue="123456-7890-0987"
-                className="h-20 rounded-[30px] font-['Poppins']  border-[#083124] opacity-50 px-8 py-[27px] max-[767px]:py-[10px] max-[767px]:h-15 font-normal text-[#083124] text-base leading-[26px]"
+                className="h-20 rounded-[30px] font-['Poppins']  border-[#083124] opacity-50 px-8 py-[27px] max-[767px]:h-15 max-[767px]:py-[10px] max-[1300px]:h-10 font-normal text-[#083124] text-base leading-[26px]"
               />
             </div>
 
@@ -111,9 +111,9 @@ export default function AppointmentSubsection  () {
                 <Input
                   id="date"
                   defaultValue="August 24, 2023"
-                  className="h-20 rounded-[30px] font-['Poppins'] max-[767px]:py-[10px] max-[767px]:h-15 border-[#083124] opacity-50 pl-[67px] py-[27px] font-normal text-[#083124] text-base leading-[26px]"
+                  className="h-20 rounded-[30px] font-['Poppins'] max-[767px]:py-[10px] max-[767px]:h-15 max-[1300px]:h-10 border-[#083124] opacity-50 pl-[67px] py-[27px] font-normal text-[#083124] text-base leading-[26px]"
                 />
-                <CalendarIcon className="absolute w-5 h-5 top-[30px] max-[767px]:top-[20px] left-8 opacity-60" />
+                <CalendarIcon className="absolute w-5 h-5 top-[30px] max-[1300px]:top-[20px] left-8 opacity-60" />
               </div>
             </div>
 
@@ -129,10 +129,10 @@ export default function AppointmentSubsection  () {
                 <Input
                   id="time"
                   defaultValue="3:30"
-                  className="h-20 rounded-[30px] font-['Poppins'] max-[767px]:py-[10px] max-[767px]:h-15 border-[#083124] opacity-50 pl-[67px] py-[27px] font-normal text-[#083124] text-base leading-[26px]"
+                  className="h-20 rounded-[30px] font-['Poppins'] max-[767px]:py-[10px] max-[767px]:h-15 max-[1300px]:h-10 border-[#083124] opacity-50 pl-[67px] py-[27px] font-normal text-[#083124] text-base leading-[26px]"
                 />
-                <ClockIcon className="absolute w-5 h-5 top-[30px] max-[767px]:top-[20px] left-8 opacity-60" />
-                <span className="absolute top-[27px] max-[767px]:top-[18px]  right-[67px] opacity-60 font-normal text-[#083124] text-base leading-[26px]">
+                <ClockIcon className="absolute w-5 h-5 top-[30px] max-[1300px]:top-[20px] left-8 opacity-60" />
+                <span className="absolute top-[27px] max-[1300px]:top-[18px]  right-[67px] opacity-60 font-normal text-[#083124] text-base leading-[26px]">
                   PM
                 </span>
               </div>
@@ -150,14 +150,20 @@ export default function AppointmentSubsection  () {
                   <Radio
                     {...controlProps(option.id, selectedReason, setSelectedReason)}
                       sx={{
-    color: "#083124", // unchecked state border
-    "&.Mui-checked": {
-      color: "#083124", // checked circle & border
-    },
-    "& .MuiSvgIcon-root": {
-      fontSize: 20, // icon size
-    },
-  }}
+                          color: "#083124",
+                          width: '20px',
+                          height : '20px',
+                          marginRight:'15px',                 // unchecked state border
+                          "&.Mui-checked": {
+                            color: "#083124",
+                           width: '20px',
+                          height : '20px',
+                          marginRight:'15px',  // checked circle & border
+                          },
+                          "& .MuiSvgIcon-root": {
+                            fontSize: 20, // icon size
+                          },
+                        }}
                   />
                   <Label htmlFor={option.id} className="opacity-60 text-[#083124] font-['Poppins'] font-normal text-base leading-[26px">
                     {option.label}
@@ -178,9 +184,15 @@ export default function AppointmentSubsection  () {
                   <Radio
                     {...controlProps(option.id, selectedDept, setSelectedDept)}
                       sx={{
-                          color: "#083124", // unchecked state border
+                          color: "#083124",
+                           width: '20px',
+                          height : '20px',
+                          marginRight:'15px',  // unchecked state border
                           "&.Mui-checked": {
-                            color: "#083124", // checked circle & border
+                            color: "#083124",
+                          width: '20px',
+                          height : '20px',
+                          marginRight:'15px',  // checked circle & border
                           },
                           "& .MuiSvgIcon-root": {
                             fontSize: 20, // icon size
@@ -222,7 +234,7 @@ export default function AppointmentSubsection  () {
       </div>
              <div className="w-[1376px] h-full absolute top-0 right-0 z-0">
                       <img src="/Vector-7.png" className="absolute top-[200px] max-[1500px]:top-[100px] max-[1000px]:py-[40px] -right-[200px] w-[1049px] h-[1050px]    z-0" alt="" />
-                  <img src="/appointment-doctor.jpg" className="absolute top-[370px] right-[150px] w-[599px] h-[745px] rounded-[30px] max-[1600px]:hidden" alt="" />
+                  <img src="/Photo.png" className="absolute top-[370px] right-[150px] max-[1750px]:right-[100px] max-[1500px]:right-[50px] max-[1500px]:top-[250px] w-[599px] h-[745px] rounded-[30px] max-[1330px]:hidden  object-cover" alt="" />
              </div>
     </section>
   );

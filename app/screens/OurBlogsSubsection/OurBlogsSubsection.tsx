@@ -27,7 +27,7 @@ export default function OurBlogsSubsection() {
   ];
 
   return (
-    <section className="relative w-full pt-[186px] pb-10 max-[1000px]:px-[25px] max-[1500px]:pt-[100px] max-[1000px]:pt-[40px]">
+    <section className="relative w-full pt-[186px] pb-10 px-[150px] max-[1780px]:px-[100px] max-[1500px]:px-[50px] max-[1000px]:px-[25px] max-[1500px]:pt-[100px] max-[1000px]:pt-[40px]">
       <div className="flex flex-col items-center mb-16">
         <h3 className="font-['Figtree'] max-[1000px]:text-[24px] max-[1000px]:leading-[34px] text-[32px] leading-[42px] font-semibold text-[#00b67a] ">
           BLOG POSTS
@@ -37,7 +37,7 @@ export default function OurBlogsSubsection() {
         </h2>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-10 max-[1500px]:gap-[20px]">
+      <div className="flex  justify-center max-[1000px]:flex-wrap max-[1500px]:justify-between max-[1000px]:justify-center  gap-10 max-[1500px]:gap-[20px]">
         {blogPosts.map((post) => {
           const isHighlighted = post.id === hoveredId;
 
@@ -46,7 +46,7 @@ export default function OurBlogsSubsection() {
               key={post.id}
               onMouseEnter={() => setHoveredId(post.id)}
               onMouseLeave={() => setHoveredId(null)}
-              className={`transition-all duration-300 w-[527px] max-[1500px]:w-[350px] max-[800px]:w-[300px] max-[767px]:w-[100%] bg-[#00b67a1a] border-none [box-shadow:0px_4px_21px_1px_#307BC41A] rounded-[20px] overflow-hidden ${
+              className={`transition-all duration-300 w-full max-w-[527px] max-[1000px]:max-w-[400px]  max-[800px]:max-w-[300px] max-[767px]:max-w-[525px] bg-[#00b67a1a] border-none [box-shadow:0px_4px_21px_1px_#307BC41A] rounded-[20px] overflow-hidden ${
                 isHighlighted
                   ? "shadow-hover-drop-shadow"
                   : "shadow-main-content-drop-shadow"
@@ -55,7 +55,7 @@ export default function OurBlogsSubsection() {
               <div className="w-full h-[380px] max-[1500px]:h-[250px] max-[767px]:w-[100%] bg-cover bg-center">
                 <img
                   src={post.imageUrl}
-                  className="w-full h-full object-cover rounded-xl"
+                  className="w-full h-full object-cover  rounded-xl"
                   alt={post.title}
                 />
               </div>

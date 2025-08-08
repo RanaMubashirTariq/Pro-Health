@@ -31,7 +31,7 @@ export default function AwardsSubsection  () {
   ];
 
   return (
-    <section className="w-full py-[200px] max-[1500px]:py-[100px]  max-[1000px]:py-[40px]   px-[150px] max-[1500px]:px-[50px] max-[1000px]:px-[25px]  ">
+    <section className="w-full py-[200px] max-[1500px]:py-[100px]  max-[1000px]:py-[40px]   px-[150px] max-[1800px]:px-[250px] max-[1500px]:px-[50px] max-[1000px]:px-[25px]  ">
         <h2 className="font-['Figtree'] max-[1500px]:text-[56px] max-[1500px]:leading-[66px] font-bold text-[#083124]  text-[72px] max-[1000px]:text-[36px] max-[1000px]:leading-[48px]  leading-[82px] mb-18 max-[1000px]:mb-[40px]  max-[1800px]:text-center">
           Awards
         </h2>
@@ -40,7 +40,7 @@ export default function AwardsSubsection  () {
           {awards.map((award, index) => (
             <Card
               key={`award-${index}`}
-              className={`pt-[25px] pr-[28px] pb-[42px] pl-[32px] max-[767px]:p-6 max-[800px]:w-full w-[390px] h-[360px]  max-[800px]:h-auto border-none [box-shadow: 0px_4px_21px_1px_#307BC41A] rounded-[15px] ${index === 1 ? "shadow-hover-drop-shadow" : "shadow-main-content-drop-shadow"}`}
+              className={`pt-[25px] pr-[28px] pb-[42px] pl-[32px] max-[767px]:p-6 max-[800px]:w-full max-[1780px]:w-[450px] max-[1100px]:w-[390px] w-[390px] h-[360px]  max-[800px]:h-auto border-none [box-shadow:0px_4px_21px_1px_#307BC41A]  bg-white rounded-[15px]`}
             >
               <CardContent className="p-0">
                 <div className="flex flex-col h-full">
@@ -52,7 +52,7 @@ export default function AwardsSubsection  () {
                       {award.title}
                     </h3>
                   </div>
-                  <p className="opacity-50 font-['Poppins'] text-base font-normal text-[#083124]">
+                  <p className="opacity-50 font-['Poppins'] text-base leading-[26px] font-normal text-[#083124]">
                     {award.description}
                   </p>
                 </div>

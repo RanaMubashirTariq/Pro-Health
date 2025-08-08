@@ -12,6 +12,8 @@ import { useState } from "react";
 export default function HeroSectionSubsection  () {
                 
   const [activeMenu, setActiveMenu] = useState("/");
+    const [City, setToCity] = useState("Cardiology");
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
             
 const menuItems = [
   { name: "Home", id: "/" },
@@ -40,9 +42,28 @@ const menuItems = [
   ];
 
 
+  const handleSmoothScroll = (id: string) => {
+  const element = document.getElementById(id);
+  if (element) {
+    const headerHeight = 100; // Adjust based on your actual header height
+    const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+    
+    window.scrollTo({
+      top: elementPosition - headerHeight,
+      behavior: "smooth"
+    });
+    
+    setActiveMenu(id);
+    setIsMenuOpen(false);
+    
+    // Update URL without causing full page reload
+    window.history.pushState(null, "", `#${id}`);
+  }
+};
 
-  const [City, setToCity] = useState("Cardiology");
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
+
   
 const CustomDropdown = ({
   options,
@@ -80,7 +101,7 @@ const CustomDropdown = ({
                 setSelected(option);
                 setOpen(false);
               }}
-              className="px-4 py-2 opacity-60 hover:bg-[#eafff7] hover:text-white cursor-pointer  text-dark-blue font-['Poppins'] font-normal  text-[20px] leading-[26px] max-[500px]:py-3"
+              className="px-4 py-2 opacity-60 hover:bg-[#083124] hover:text-white cursor-pointer  text-dark-blue font-['Poppins'] font-normal  text-[20px] leading-[26px] max-[500px]:py-3"
             >
               {option}
             </li>
@@ -101,11 +122,11 @@ const CustomDropdown = ({
       <div className="relative w-full h-[1097px] max-[1500px]:h-[800px] max-[1022px]:h-[450px] max-[767px]:h-[500px] bg-custom-gradient ">
                       <img src="/Vector-3.png" className="absolute bottom-0 left-0 w-[623px] h-[655px] z-0" alt="" />
                <img src="/Vector-2.png" className="absolute -top-[200px] right-0 w-[623px] h-[655px] z-0 max-[800px]:hidden" alt="" />
-               <img src="/Vector-1.png" className="absolute top-[50px] -right-[200px] w-[872px] h-[1030px] z-0 max-[800px]:hidden" alt="" />
+               <img src="/Vector-1.png" className="absolute top-[50px] -right-[200px] w-[872px] h-[1030px]  z-0 max-[1022px]:hidden" alt="" />
         {/* Background image would go here */}
          <div className="w-full h-auto bg-[url('/blur-back.jpg')]"/>
         {/* Navigation */}
- <div className="w-full z-51   px-[150px] max-[1500px]:px-[50px] max-[1000px]:px-[25px] pt-[59px] max-[1000px]:pt-[30px] flex justify-between items-center ">
+ <div className="w-full z-51   px-[150px] max-[1780px]:px-[100px] max-[1500px]:px-[50px] max-[1000px]:px-[25px] pt-[59px] max-[1000px]:pt-[30px] flex justify-between items-center ">
       <div className="w-full flex items-center gap-[124px]">
         <div className="w-[173px] h-[28px] max-[767px]:w-[130px]">
           <img src="/logo.svg" alt="" className="w-full h-full object-contain" />
@@ -116,24 +137,17 @@ const CustomDropdown = ({
             isMenuOpen ? "max-[1250px]:flex" : "max-[1250px]:hidden"
           }`}
         >
-          {menuItems.map((item, index) => (
-            <div
-              key={index}
-              onClick={() => {
-                const section = document.getElementById(item.id);
-                if (section) {
-                  section.scrollIntoView({ behavior: "smooth" });
-                  setActiveMenu(item.id);
-                  setIsMenuOpen(false);
-                }
-              }}
-              className={`font-['Poppins'] text-base leading-[26px] cursor-pointer ${
-                activeMenu === item.id ? "text-[#083124] font-semibold" : "text-[#083124] font-normal"
-              }`}
-            >
-              {item.name}
-            </div>
-          ))}
+     {menuItems.map((item, index) => (
+  <div
+    key={index}
+    onClick={() => handleSmoothScroll(item.id)}
+    className={`font-['Poppins'] text-base leading-[26px] cursor-pointer ${
+      activeMenu === item.id ? "text-[#083124] font-semibold" : "text-[#083124] font-normal"
+    }`}
+  >
+    {item.name}
+  </div>
+))}
         </div>
       </div>
 
@@ -147,18 +161,18 @@ const CustomDropdown = ({
 
         {/* Hero Content */}
 
-         <div className="absolute top-[163px] right-[107px] w-[872px] max-[1500px]:w-[600px] max-[1500px]:h-[850px] h-[934px] max-[1500px]:top-[50px] max-[1500px]:right-[50px] max-[1100px]:w-[400px] max-[1100px]:top-[150px] max-[1022px]:hidden">
+         <div className="absolute top-[163px] right-[107px] w-[872px] max-[1600px]:right-[50px] max-[1500px]:w-[600px] max-[1500px]:h-[850px] h-[934px] max-[1500px]:top-[50px] max-[1500px]:right-[50px] max-[1200px]:w-[400px] max-[1100px]:top-[150px] max-[1022px]:hidden">
               <img src="/doctor-img.png" className="w-full h-full object-contain" alt="" />
          </div>
-        <div className="relative flex w-full mt-[189px] max-[1500px]:mt-[100px] max-[1000px]:mt-[40px] pl-[150px] max-[1500px]:px-[50px] max-[1022px]:px-[25px]">
+        <div className="relative flex w-full mt-[189px]  max-[1500px]:mt-[100px] max-[1000px]:mt-[40px] pl-[150px] max-[1780px]:pl-[100px] max-[1500px]:px-[50px] max-[1022px]:px-[25px]">
                        
-          <div className="w-[912px] max-[1500px]:w-[612px] max-[1022px]:w-[100%] flex flex-col items-start max-[1022px]:items-center">
+          <div className="w-[912px] max-[1880px]:w-[612px]  max-[1022px]:w-[100%] flex flex-col items-start max-[1022px]:items-center">
                  <div className="w-full flex flex-col gap-[29px]">
-                                   <h1 className="w-[908px] max-[1500px]:w-[600px] max-[1022px]:w-[100%] max-[1022px]:text-center max-[1022px]:text-[36px] max-[1022px]:leading-[48px]  font-bold text-[94px] max-[1500px]:text-[72px] max-[1500px]:leading-[82px] font-['Figtree'] text-[#083023] leading-[104px] tracking-[0%]">
+                                   <h1 className="w-[908px] max-[1880px]:w-[600px] max-[1022px]:w-[100%] max-[1022px]:text-center  max-[1022px]:text-[36px] max-[1022px]:leading-[48px]  font-bold text-[94px] max-[1500px]:text-[72px] max-[1500px]:leading-[82px] font-['Figtree'] text-[#083023] leading-[104px] tracking-[0%]">
               Your Partner in Health and Wellness
             </h1>
 
-            <p className="w-[646px] max-[1500px]:w-[550px] max-[1022px]:w-[100%]  font-['Poppins'] font-normal text-[20px] max-[767px]:text-[16px] max-[767px]:leading-[26px] text-[#083124] leading-[30px] max-[1022px]:text-center">
+            <p className="w-[646px] max-[1880px]:w-[550px] max-[1022px]:w-[100%]  font-['Poppins'] font-normal text-[20px] max-[767px]:text-[16px] max-[767px]:leading-[26px] text-[#083124] leading-[30px] max-[1022px]:text-center">
               We are committed to providing you with the best medical and
               healthcare services to help you live healthier and happier.
             </p>
@@ -177,24 +191,24 @@ const CustomDropdown = ({
             </Button>
           </div>
 
-          <div className="absolute w-[1044px] max-[1500px]:w-[850px] h-[300px] top-[208px] right-[134px] max-[1500px]:top-[140px] max-[1500px]:right-[50px] max-[1300px]:hidden">
+          <div className="absolute w-[1044px] max-[1500px]:w-[850px] h-[300px] top-[208px] right-[134px] max-[1600px]:right-[70px] max-[1500px]:top-[140px] max-[1500px]:right-[50px] max-[1300px]:hidden">
             {/* Background decorative elements */}
 
             {/* Stats */}
             <div className="relative ">
               {/* Patient Recover Card */}
-                 <img src="element 2.png" className="absolute top-0 right-0 w-[224px] h-[242px]" alt="" />
+                 <img src="Element-2.png" className="absolute top-0 right-0 w-[224px] h-[242px]" alt="" />
 
               {/* Doctors Card */}
-                     <img src="/element 1.png" className=" absolute top-[196px] left-0 w-[384px] h-[104px]" alt="" />
+                     <img src="/Element-1.png" className=" absolute top-[196px] left-0 w-[384px] h-[104px]" alt="" />
             </div>
           </div>
         </div>
 
         {/* Booking Section */}
       </div>
-           <Card className="absolute top-[991px] max-[1500px]:top-[720px] max-[1022px]:top-[520px] max-[1022px]:hidden z-10 left-1/2 -translate-x-1/2    w-full max-w-[1620px] max-[1500px]:max-w-[1320px] max-[1500px]:max-w-[1120px] max-[1100px]:max-w-[800px]   h-[212px] max-[1100px]:h-auto bg-[#eafff7] rounded-[15px] [box-shadow:0px_4px_21px_1px_#307BC41A] border-none">
-          <CardContent className="flex items-center justify-center h-full p-0">
+           <Card className="absolute top-[991px] max-[1500px]:top-[720px] max-[1022px]:top-[520px] max-[1022px]:hidden z-10 left-1/2 -translate-x-1/2    w-full max-w-[1620px] max-[1500px]:max-w-[1320px] max-[1500px]:max-w-[1120px] max-[1650px]:max-w-[1320px] max-[1200px]:max-w-[1050px] max-[1100px]:max-w-[900px]   h-[212px] max-[1100px]:h-auto bg-[#eafff7] rounded-[15px] [box-shadow:0px_4px_21px_1px_#307BC41A] border-none">
+          <CardContent className="flex items-center justify-center h-full p-0 ">
             <div className="flex items-center w-full justify-between px-[114px] max-[1500px]:px-[50px] max-[500px]:px-[25px]  max-[1100px]:flex-wrap  max-[1100px]:justify-between max-[767px]:flex-col max-[1100px]:items-start  max-[1100px]:gap-[30px] max-[1100px]:py-[30px]">
               {bookingOptions.map((option, index) => (
                 <div key={index} className="flex items-center gap-6">
@@ -224,7 +238,7 @@ const CustomDropdown = ({
                 </div>
               ))}
 
-              <Button className="w-[163px] h-[50px] bg-[#64cfa9] rounded-3xl shadow-button-drop-shadow">
+              <Button className="w-[163px] h-[50px] bg-[#64cfa9] rounded-3xl shadow-button-drop-shadow max-[1100px]:mr-[50px]">
                 <span className="font-['Poppins'] font-medium text-[#eafff7] text-base tracking-[0.24px] leading-[26px]">
                   Book Now
                 </span>

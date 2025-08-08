@@ -51,21 +51,31 @@ export default function Home() {
 
   return (
     <div className="w-full overflow-hidden">
-         <div id="/">
-              <HeroSectionSubsection/>
-         </div>
-       <OurValuesSubsection/>
-           <div id="about">
-                <AboutUsSubsection/>
-           </div>
-       <div id="departments"> <DepartmentsSubsection/> </div>
-       <AwardsSubsection/>
-       <TestimonialsSubsection/>
-       <CtaSubsection/>
-       <div id="blog"> <OurBlogsSubsection/> </div>
-       <div id="contact"> <AppointmentSubsection/> </div>
-       <FaqSubsection/>
-                   <div className="flex flex-col items-start gap-[41px] w-full max-w-[1233px] mx-auto max-[1500px]:px-[50px] max-[1500px]:gap-[20px] max-[1000px]:px-[25px]">
+      <div id="/">
+        <HeroSectionSubsection/>
+      </div>
+      <OurValuesSubsection/>
+      <div id="about">
+        <AboutUsSubsection/>
+      </div>
+      <div id="departments">
+        <DepartmentsSubsection/>
+      </div>
+      <AwardsSubsection/>
+      <div id="testimonials"> {/* Added ID */}
+        <TestimonialsSubsection/>
+      </div>
+      <CtaSubsection/>
+      <div id="blog">
+        <OurBlogsSubsection/>
+      </div>
+      <div id="contact">
+        <AppointmentSubsection/>
+      </div>
+      <div id="faq"> {/* Added ID */}
+        <FaqSubsection/>
+      </div>
+                   <div className="flex flex-col items-start gap-[41px] w-full max-w-[1233px] mx-auto mt-[146px] max-[1500px]:mt-[50px] max-[1000px]:mt-[40px] max-[1500px]:px-[50px] max-[1500px]:gap-[20px] max-[1000px]:px-[25px]">
                                             <div className="overflow-hidden w-full ">
                                   <div className="flex gap-[42px] max-[1000px]:gap-[20px] whitespace-nowrap animate-marquee-ltr min-w-max">
                                 {[...partnerLogos, ...partnerLogos, ...partnerLogos, ...partnerLogos, ...partnerLogos, ...partnerLogos].map((logo, index) => (

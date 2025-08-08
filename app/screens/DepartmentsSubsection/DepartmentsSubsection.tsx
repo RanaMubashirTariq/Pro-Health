@@ -53,19 +53,19 @@ const departments = [
 
 
   return ( 
-     <section className="relative w-full   h-[571px] mt-[103px] px-[123px] max-[1500px]:px-[50px] max-[1000px]:px-[25px] max-[1400px]:h-[900px] max-[1000px]:h-[1200px] max-[767px]:h-[1400px] max-[500px]:h-[1500px]">
+     <section className="relative w-full max-w-[1922px]  h-[571px] mt-[103px] px-[123px] max-[1500px]:px-[50px] max-[1000px]:px-[25px] max-[1850px]:h-[900px] max-[1000px]:h-[1200px] max-[767px]:h-[1400px] max-[500px]:h-[1500px]">
     <div className="relative w-full h-[449px] max-[1000px]:h-[250px]  py-24  bg-custom-gradient rounded-[25px] overflow-hidden">
               
                <img src="/vector-5.svg" className="absolute top-0 left-0 w-[623px] h-[655px] z-0" alt="" />
                <img src="/vector-4.svg" className="absolute top-0 right-0 w-[623px] h-[655px] z-0" alt="" />
 
     </div>
-                 <div className="w-full max-w-[1873px]  px-[13px] max-[1800px]:px-[70px]  max-[767px]:px-[25px] absolute top-[99px] left-1/2 -translate-x-1/2 z-10 mx-auto">
+                 <div className="w-full max-w-[1618px]  px-[13px] max-[1800px]:px-[70px]  max-[767px]:px-[25px] absolute top-[110px] left-1/2 -translate-x-1/2 z-10 mx-auto">
         <h2 className="text-[72px] max-[1500px]:text-[56px] max-[1500px]:leading-[66px] max-[1000px]:text-[36px] max-[1000px]:leading-[48px] leading-[82px] font-bold text-[#083124] text-center mb-16 font-['Figtree']">
           Departments
         </h2>
 
- <div className="flex items-center justify-center max-[1400px]:flex-wrap gap-6 mx-auto">
+ <div className="relative flex items-center justify-center max-[1850px]:flex-wrap gap-6 mx-auto max-[1850px]:px-[100px] max-[1500px]:px-[0px] max-[1850px]:gap-15 max-[1550px]:gap-[40px] max-[1350px]:gap-[80px] max-[1150px]:gap-[40px]">
           {departments.map((department, index) => {
             const isActive = hoveredIndex === index;
 
@@ -76,7 +76,7 @@ const departments = [
                 onMouseLeave={() => setHoveredIndex(null)}
                 className={`w-full sm:w-[253px] h-[290px] max-[767px]:h-auto rounded-[20px] transition-all duration-300 border-none [box-shadow:0px_4px_21px_1px_#307BC41A] ${
                   isActive
-                    ? "bg-[#64cfa9] shadow-hover-drop-shadow"
+                    ? "bg-[#64cfa9] shadow-hover-drop-shadow mb-[30px]"
                     : "bg-[#ffffff] shadow-main-content-drop-shadow"
                 }`}
               >

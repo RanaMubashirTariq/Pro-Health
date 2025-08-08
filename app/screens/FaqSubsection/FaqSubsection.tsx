@@ -11,11 +11,11 @@ export default function FaqSubsection  () {
   const faqItems = [
     {
       question: "What services does ProHealth offer?",
-      answer: "",
+      answer: "Primary Care  General wellness and chronic condition management.",
     },
     {
       question: "How do I schedule an appointment with ProHealth?",
-      answer: "",
+      answer: "You can schedule an appointment with ProHealth by visiting their official website and using the online booking form, calling their clinic or customer service line directly, or, in some locations, walking in for same-day service. ",
     },
     {
       question: "Do you accept insurance?",
@@ -24,11 +24,11 @@ export default function FaqSubsection  () {
     },
     {
       question: "What should I bring to my appointment?",
-      answer: "",
+      answer: "For your ProHealth appointment, you should bring a valid photo ID, your insurance card (if applicable), a list of any medications you are currently taking, and any relevant medical records or test results",
     },
     {
       question: "How do I request a prescription refill?",
-      answer: "",
+      answer: "You can request a prescription refill with ProHealth by calling your clinic directly, using their patient portal if you have an account, or speaking with your pharmacist, who can contact ProHealth on your behalf. ",
     },
   ];
 

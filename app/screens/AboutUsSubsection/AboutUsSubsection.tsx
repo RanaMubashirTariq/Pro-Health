@@ -5,7 +5,7 @@ export default function AboutUsSubsection   () {
   // Quality Professionals text arranged in a circle
 
   return (
-    <section className="relative w-full pt-[200px] pb-10 px-[150px] max-[1500px]:px-[50px] max-[1000px]:px-[25px] max-[1500px]:pt-[120px]  max-[1300px]:pt-[60px] max-[1000px]:pt-[40px]">
+    <section className="relative w-full pt-[200px] pb-10 px-[150px] max-[1780px]:px-[100px] max-[1500px]:px-[50px] max-[1000px]:px-[25px] max-[1500px]:pt-[120px]  max-[1300px]:pt-[60px] max-[1000px]:pt-[40px]">
         {/* Background gradient circle */}
         <div className="absolute w-[1000px] h-[1000px] right-[-200px] top-[-300px] rounded-full [background:radial-gradient(50%_50%_at_50%_50%,rgba(59,147,118,0.38)_0%,rgba(59,147,118,0)_100%)] opacity-60" />
 

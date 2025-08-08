@@ -41,16 +41,16 @@ export default function OurValuesSubsection() {
         Our Values
       </h2>
 
-      <div className="flex justify-center items-center flex-wrap px-[150px] max-[1500px]:px-[50px] max-[1000px]:px-[25px] gap-[187px] max-[1900px]:gap-[100px] max-[1670px]:gap-[50px] max-[1300px]:gap-[100px] max-[1000px]:gap-[20px]">
+      <div className="flex justify-center items-center flex-wrap px-[150px] max-[1780px]:px-[100px]   max-[1500px]:px-[50px] max-[1000px]:px-[25px] gap-[187px] max-[1900px]:gap-[130px] max-[1670px]:gap-[80px] max-[1300px]:gap-[40px] max-[1000px]:gap-[20px]">
         {valueCards.map((card, index) => (
           <Card
             key={index}
-            className="group bg-[#64cfa91a] rounded-[25px] max-[800px]:w-[80%] max-[500px]:w-[100%]  w-[390px] h-auto [box-shadow:0px_4px_21px_1px_#307BC41A] border-none transition-all duration-300"
+            className="group bg-[#64cfa91a] rounded-[25px] max-[800px]:w-[80%] max-[500px]:w-[100%]  w-[390px] max-[1300px]:w-[355px]  h-[417px] max-[1100px]:h-auto [box-shadow:0px_4px_21px_1px_#307BC41A] border-none transition-all duration-300"
           >
             <CardContent className="p-0">
               <div className="relative p-6 sm:p-8 md:py-[70px] md:px-[47px] z-50">
                 <div className="flex flex-col items-center sm:gap-[62px] gap-10 transition-all duration-300 md:hover:gap-[40px] ">
-                  <div className="flex items-center  justify-center p-4 rounded-[30px] transition-all duration-300 group-hover:bg-[#d5f5ec] group-hover:w-[465px] max-[500px]:group-hover:w-[100%]">
+                  <div className="flex items-center  justify-center p-4 rounded-[30px] transition-all duration-300 group-hover:bg-[#d5f5ec] group-hover:w-[465px] max-[1300px]:group-hover:w-[400px]  max-[500px]:group-hover:w-[100%]">
                     <div className="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] mr-4 sm:mr-5">
                       <img src={card.icon} alt={`${card.title}-pic`} />
                     </div>
