@@ -105,7 +105,7 @@ const CustomDropdown = ({
         {/* Background image would go here */}
          <div className="w-full h-auto bg-[url('/blur-back.jpg')]"/>
         {/* Navigation */}
- <div className="-full z-50   backdrop-blur-md px-[150px] max-[1500px]:px-[50px] max-[1000px]:px-[25px] pt-[59px] max-[1000px]:pt-[30px] flex justify-between items-center ">
+ <div className="w-full z-51   px-[150px] max-[1500px]:px-[50px] max-[1000px]:px-[25px] pt-[59px] max-[1000px]:pt-[30px] flex justify-between items-center ">
       <div className="w-full flex items-center gap-[124px]">
         <div className="w-[173px] h-[28px] max-[767px]:w-[130px]">
           <img src="/logo.svg" alt="" className="w-full h-full object-contain" />
@@ -140,7 +140,7 @@ const CustomDropdown = ({
       <div className="relative flex items-center justify-between w-[107px]">
         <img className="w-[29.34px] h-[29.34px] max-[767px]:w-[25px] max-[767px]:h-[25px]" src="/search.png" alt="Icon" />
         <div onClick={() => setIsMenuOpen(!isMenuOpen)} className="cursor-pointer block">
-          <img className="w-[29.34px] h-[29.34px] max-[767px]:w-[25px] max-[767px]:h-[25px] absolute right-0 top-0 z-50" src="/vector.png" alt="Menu Toggle" />
+          <img className="w-[29.34px] h-[29.34px] max-[767px]:w-[25px] max-[767px]:h-[25px] absolute right-0 top-0 z-51" src="/vector.png" alt="Menu Toggle" />
         </div>
       </div>
     </div>
