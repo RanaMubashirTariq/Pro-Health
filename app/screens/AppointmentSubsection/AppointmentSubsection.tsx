@@ -1,9 +1,10 @@
+'use client'
 import { CalendarIcon, ClockIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
 import { Label } from "../../components/ui/label";
-import { RadioGroup, RadioGroupItem } from "../../components/ui/radio-group";
+import Radio from "@mui/material/Radio";
 
 export default function AppointmentSubsection  () {
   // Form field data
@@ -20,8 +21,27 @@ export default function AppointmentSubsection  () {
     { id: "neurology", label: "Neurology", checked: false },
   ];
 
+
+    // State for each radio group
+  const [selectedReason, setSelectedReason] = React.useState("new-patient");
+  const [selectedDept, setSelectedDept] = React.useState("obgyn");
+
+  // Radio control helper
+  const controlProps = (
+    value: string,
+    selected: string,
+    setSelected: React.Dispatch<React.SetStateAction<string>>
+  ) => ({
+    checked: selected === value,
+    onChange: (event: React.ChangeEvent<HTMLInputElement>) =>
+      setSelected(event.target.value),
+    value,
+    name: `radio-${value}`,
+    inputProps: { "aria-label": value },
+  });
+
   return (
-    <section className="relative w-full py-[249px] max-[1500px]:py-[100px] max-[1000px]:py-[40px] mt-16 max-[1000px]:px-[25px] ">
+    <section className="relative w-full py-[249px] max-[1500px]:py-[100px] max-[1000px]:py-[40px] mt-16 max-[1000px]:px-[25px]  max-[1500px]:px-[50px]">
       <div className="relative z-10 container mx-auto ">
         <div className="flex flex-col mb-12">
           <h3 className="font-semibold text-[#00b67a] max-[767px]:text-[24px] max-[767px]:leading-[34px] text-[32px] max-[767px]:text-center leading-[50px]">
@@ -120,56 +140,61 @@ export default function AppointmentSubsection  () {
           </div>
 
           {/* Reason for Visit */}
-          <div className="mt-[48px] max-[767px]:mt-5">
-            <Label className="block mb-2 font-normal font-['Poppins']  text-[#083124] text-base leading-[26px]">
+          <div className="mt-[48px]">
+            <Label className="block mb-2 font-normal text-[#083124] text-base">
               Reason for Visit
             </Label>
-            <RadioGroup defaultValue="new-patient" className="flex flex-wrap gap-10">
+            <div className="flex flex-wrap gap-10">
               {reasonOptions.map((option) => (
                 <div key={option.id} className="flex items-center space-x-2">
-                  <div className="relative flex items-center">
-                    <RadioGroupItem
-                      id={option.id}
-                      value={option.id}
-                      className="w-5 h-5 rounded-[10px] border-[#083124]"
-                    />
-                  </div>
-                  <Label
-                    htmlFor={option.id}
-                    className="opacity-60 font-normal font-['Poppins']  text-[#083124] text-base leading-[26px]"
-                  >
+                  <Radio
+                    {...controlProps(option.id, selectedReason, setSelectedReason)}
+                      sx={{
+    color: "#083124", // unchecked state border
+    "&.Mui-checked": {
+      color: "#083124", // checked circle & border
+    },
+    "& .MuiSvgIcon-root": {
+      fontSize: 20, // icon size
+    },
+  }}
+                  />
+                  <Label htmlFor={option.id} className="opacity-60 text-[#083124] font-['Poppins'] font-normal text-base leading-[26px">
                     {option.label}
                   </Label>
                 </div>
               ))}
-            </RadioGroup>
+            </div>
           </div>
 
           {/* Department */}
-          <div className="mt-[42px] max-[767px]:mt-5">
-            <Label className="block mb-2 font-normal font-['Poppins']  text-[#083124] text-base leading-[26px]">
+               <div className="mt-[42px]">
+            <Label className="block mb-2 font-normal text-[#083124] text-base">
               Department
             </Label>
-            <RadioGroup defaultValue="obgyn" className="flex flex-wrap gap-10">
+            <div className="flex flex-wrap gap-10">
               {departmentOptions.map((option) => (
                 <div key={option.id} className="flex items-center space-x-2">
-                  <div className="relative flex items-center ">
-                    <RadioGroupItem
-                      id={option.id}
-                      value={option.id}
-                      className="w-5 h-5 rounded-[10px] border-[#083124] "
-                    />
-                  </div>
-                  <Label
-                    htmlFor={option.id}
-                    className="opacity-60 font-normal font-['Poppins']  text-[#083124] text-base leading-[26px]"
-                  >
+                  <Radio
+                    {...controlProps(option.id, selectedDept, setSelectedDept)}
+                      sx={{
+                          color: "#083124", // unchecked state border
+                          "&.Mui-checked": {
+                            color: "#083124", // checked circle & border
+                          },
+                          "& .MuiSvgIcon-root": {
+                            fontSize: 20, // icon size
+                          },
+                        }}
+                  />
+                  <Label htmlFor={option.id} className="opacity-60 text-[#083124] font-['Poppins'] font-normal text-base leading-[26px">
                     {option.label}
                   </Label>
                 </div>
               ))}
-            </RadioGroup>
+            </div>
           </div>
+
 
           {/* Submit Button */}
           <Button className="mt-12 h-[50px] w-[163px] bg-[#083124] rounded-3xl shadow-button-drop-shadow">
