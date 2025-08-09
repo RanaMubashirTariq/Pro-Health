@@ -46,13 +46,15 @@ export default function AppointmentSubsection  () {
 
 
 
-    const hiddenDateRef = useRef(null);
   const [selectedDate, setSelectedDate] = useState("Agust 24 , 2023");
 
-  const handleIconClick = () => {
-    // Open hidden date input
+const hiddenDateRef = useRef<HTMLInputElement | null>(null);
+
+const handleIconClick = () => {
+  if (hiddenDateRef.current) {
     hiddenDateRef.current.showPicker();
-  };
+  }
+};
 
   const handleDateChange = (e) => {
     // Format the date
