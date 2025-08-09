@@ -1,4 +1,5 @@
 'use client'
+import { useRef, useState } from "react";
 import { CalendarIcon, ClockIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
@@ -39,6 +40,52 @@ export default function AppointmentSubsection  () {
     name: `radio-${value}`,
     inputProps: { "aria-label": value },
   });
+
+
+
+
+
+
+    const hiddenDateRef = useRef(null);
+  const [selectedDate, setSelectedDate] = useState("Agust 24 , 2023");
+
+  const handleIconClick = () => {
+    // Open hidden date input
+    hiddenDateRef.current.showPicker();
+  };
+
+  const handleDateChange = (e) => {
+    // Format the date
+    const date = new Date(e.target.value);
+    const formattedDate = date.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+    setSelectedDate(formattedDate);
+  };
+
+
+// Add this with your state
+const [time, setTime] = useState("3:30");
+const [amPm, setAmPm] = useState("PM");
+
+// Updated clock click handler
+const handleClockClick = () => {
+  const now = new Date();
+
+  let hours = now.getHours();
+  const minutes = now.getMinutes().toString().padStart(2, "0");
+
+  // Convert to 12-hour format
+  const formattedHours = hours % 12 || 12;
+  const amPmValue = hours >= 12 ? "PM" : "AM";
+
+  // Set state separately
+  setTime(`${formattedHours}:${minutes}`);
+  setAmPm(amPmValue);
+};
+
 
   return (
     <section className="relative w-full py-[249px] max-[1500px]:py-[100px] max-[1000px]:py-[40px] mt-16 max-[1880px]:px-[150px] max-[1780px]:px-[100px] max-[1750px]:px-[100px]  max-[1000px]:px-[25px]  max-[1500px]:px-[50px]">
@@ -101,43 +148,77 @@ export default function AppointmentSubsection  () {
 
             {/* Preferred Date Field */}
             <div className="flex flex-col gap-3 mt-[22px] max-[767px]:mt-0">
-              <Label
-                htmlFor="date"
-                className="font-normal font-['Poppins']  text-[#083124] text-base leading-[26px]"
-              >
-                Preferred Date
-              </Label>
-              <div className="relative">
-                <Input
-                  id="date"
-                  defaultValue="August 24, 2023"
-                  className="h-20 rounded-[30px] font-['Poppins'] max-[767px]:py-[10px] max-[767px]:h-15 max-[1300px]:h-10 border-[#083124] opacity-50 pl-[67px] py-[27px] font-normal text-[#083124] text-base leading-[26px]"
-                />
-                <CalendarIcon className="absolute w-5 h-5 top-[30px] max-[1300px]:top-[20px] left-8 opacity-60" />
-              </div>
-            </div>
+      <Label
+        htmlFor="date"
+        className="font-normal font-['Poppins'] text-[#083124] text-base leading-[26px]"
+      >
+        Preferred Date
+      </Label>
+
+      <div className="relative">
+        {/* Visible Input */}
+        <Input
+          id="date"
+          value={selectedDate}
+          readOnly
+          placeholder="Agust 24 , 2023"
+          className="h-20 rounded-[30px] font-['Poppins'] 
+            max-[767px]:py-[10px] max-[767px]:h-15 max-[1300px]:h-10 
+            border-[#083124] opacity-50 pl-[67px] py-[27px] 
+            font-normal text-[#083124] text-base leading-[26px]"
+        />
+
+        {/* Calendar Icon */}
+        <CalendarIcon
+          onClick={handleIconClick}
+          className="absolute w-5 h-5 top-[30px] max-[1300px]:top-[20px] left-8 opacity-60 cursor-pointer"
+        />
+
+        {/* Hidden Native Date Picker */}
+        <input
+          type="date"
+          ref={hiddenDateRef}
+          onChange={handleDateChange}
+          className="hidden"
+        />
+      </div>
+    </div>
 
             {/* Preferred Time Field */}
-            <div className="flex flex-col gap-3 mt-[22px] max-[767px]:mt-0">
-              <Label
-                htmlFor="time"
-                className="font-normal font-['Poppins']  text-[#083124] text-base leading-[26px]"
-              >
-                Preferred Time
-              </Label>
-              <div className="relative">
-                <Input
-                  id="time"
-                  defaultValue="3:30"
-                  className="h-20 rounded-[30px] font-['Poppins'] max-[767px]:py-[10px] max-[767px]:h-15 max-[1300px]:h-10 border-[#083124] opacity-50 pl-[67px] py-[27px] font-normal text-[#083124] text-base leading-[26px]"
-                />
-                <ClockIcon className="absolute w-5 h-5 top-[30px] max-[1300px]:top-[20px] left-8 opacity-60" />
-                <span className="absolute top-[27px] max-[1300px]:top-[18px]  right-[67px] opacity-60 font-normal text-[#083124] text-base leading-[26px]">
-                  PM
-                </span>
-              </div>
-            </div>
+              <div className="flex flex-col gap-3 mt-[22px] max-[767px]:mt-0">
+      <Label
+        htmlFor="time"
+        className="font-normal font-['Poppins'] text-[#083124] text-base leading-[26px]"
+      >
+        Preferred Time
+      </Label>
+
+      <div className="relative">
+  <Input
+    id="time"
+    value={time}
+    readOnly
+    placeholder="3:30"
+    className="h-20 rounded-[30px] font-['Poppins'] 
+      max-[767px]:py-[10px] max-[767px]:h-15 max-[1300px]:h-10 
+      border-[#083124] opacity-50 pl-[67px] py-[27px] 
+      font-normal text-[#083124] text-base leading-[26px]"
+  />
+
+  <ClockIcon
+    onClick={handleClockClick}
+    className="absolute w-5 h-5 top-[30px] 
+      max-[1300px]:top-[17px] max-[767px]:top-[20px] left-8 opacity-60 cursor-pointer"
+  />
+
+  {/* AM/PM span */}
+  <span className="absolute top-[27px] max-[1300px]:top-[15px] max-[767px]:top-[18px] right-[67px] opacity-60 font-normal text-[#083124] text-base leading-[26px]">
+    {amPm}
+  </span>
+</div>
+    </div>
           </div>
+          
 
           {/* Reason for Visit */}
           <div className="mt-[48px]">
