@@ -56,16 +56,16 @@ const handleIconClick = () => {
   }
 };
 
-  const handleDateChange = (e) => {
-    // Format the date
-    const date = new Date(e.target.value);
-    const formattedDate = date.toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
-    setSelectedDate(formattedDate);
-  };
+const handleDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const date = new Date(e.target.value);
+  const formattedDate = date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+  setSelectedDate(formattedDate);
+};
+
 
 
 // Add this with your state
