@@ -60,12 +60,12 @@ const departments = [
                <img src="/vector-4.svg" className="absolute top-0 right-0 w-[623px] h-[655px] z-0" alt="" />
 
     </div>
-                 <div className="w-full max-w-[1618px]  px-[13px] max-[1800px]:px-[70px]  max-[767px]:px-[25px] absolute top-[110px] left-1/2 -translate-x-1/2 z-10 mx-auto">
+                 <div className="w-full max-w-[1618px]  px-[13px] max-[1800px]:px-[70px]  max-[767px]:px-[25px] absolute top-[110px] left-1/2 max-[1500px]:top-[160px] max-[1100px]:top-[110px] -translate-x-1/2 z-10 mx-auto">
         <h2 className="text-[72px] max-[1500px]:text-[56px] max-[1500px]:leading-[66px] max-[1000px]:text-[36px] max-[1000px]:leading-[48px] leading-[82px] font-bold text-[#083124] text-center mb-16 font-['Figtree']">
           Departments
         </h2>
 
- <div className="relative flex items-center justify-between max-[767]:justify-center  max-[1200px]:flex-wrap  gap-6 mx-auto max-[1850px]:px-[50px] max-[1650px]:px-[100px] max-[1500px]:px-[0px]  max-[1550px]:gap-[20px] max-[1350px]:gap-[20px] max-[1150px]:gap-[40px]">
+ <div className="relative flex items-center justify-between max-[767]:justify-center  max-[1200px]:flex-wrap  gap-6 max-[1350px]:gap-5 mx-auto max-[1850px]:px-[50px] max-[1650px]:px-[100px] max-[1500px]:px-[0px]  max-[1550px]:gap-[20px] max-[1350px]:gap-[20px] max-[1150px]:gap-[40px]">
           {departments.map((department, index) => {
             const isActive = hoveredIndex === index;
 
@@ -80,7 +80,7 @@ const departments = [
                     : "bg-[#ffffff] shadow-main-content-drop-shadow"
                 }`}
               >
-                <CardContent className="flex flex-col items-center justify-center gap-5 h-full p-6 relative">
+                <CardContent className="flex flex-col items-center justify-center gap-5 h-full p-6 max-[1350px]:p-4 relative">
                   <div className="mb-6 ">
                     <img
                       className={department.iconClassName}
