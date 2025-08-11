@@ -53,14 +53,14 @@ const departments = [
 
 
   return ( 
-     <section className="relative w-full max-w-[1922px]  h-[571px] mt-[103px] px-[123px] max-[1500px]:px-[50px] max-[1000px]:px-[25px] max-[1200px]:h-[900px] max-[1000px]:h-[1200px] max-[767px]:h-[1600px] max-[500px]:h-[1500px]">
-    <div className="relative w-full h-[449px] max-[1000px]:h-[250px]  py-24  bg-custom-gradient rounded-[25px] overflow-hidden">
+     <section className="relative w-full max-w-[1922px]  h-[571px] max-[1350px]:h-[471px] mt-[103px] px-[123px] max-[1500px]:px-[50px] max-[1000px]:px-[25px] max-[1200px]:h-[700px] max-[1000px]:h-[1100px] max-[767px]:h-[1500px] max-[500px]:h-[1500px]">
+    <div className="relative w-full h-[449px] max-[1350px]:h-[350px] max-[1000px]:h-[250px]  py-24  bg-custom-gradient rounded-[25px] overflow-hidden">
               
                <img src="/vector-5.svg" className="absolute top-0 left-0 w-[623px] h-[655px] z-0" alt="" />
                <img src="/vector-4.svg" className="absolute top-0 right-0 w-[623px] h-[655px] z-0" alt="" />
 
     </div>
-                 <div className="w-full max-w-[1618px]  px-[13px] max-[1800px]:px-[70px]  max-[767px]:px-[25px] absolute top-[110px] left-1/2 max-[1500px]:top-[160px] max-[1100px]:top-[110px] -translate-x-1/2 z-10 mx-auto">
+                 <div className="w-full max-w-[1618px]  px-[13px] max-[1800px]:px-[70px]  max-[767px]:px-[25px] absolute top-[110px] left-1/2 max-[1500px]:top-[110px] max-[1350px]:top-[60px] max-[1100px]:top-[110px] -translate-x-1/2 z-10 mx-auto">
         <h2 className="text-[72px] max-[1500px]:text-[56px] max-[1500px]:leading-[66px] max-[1000px]:text-[36px] max-[1000px]:leading-[48px] leading-[82px] font-bold text-[#083124] text-center mb-16 font-['Figtree']">
           Departments
         </h2>
@@ -74,7 +74,7 @@ const departments = [
                 key={`department-${index}`}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
-                className={`w-full max-w-[253px] max-[767px]:max-w-[100%] h-[290px] max-[767px]:h-auto rounded-[20px] transition-all duration-300 border-none [box-shadow:0px_4px_21px_1px_#307BC41A] ${
+                className={`w-full max-w-[253px] max-[767px]:max-w-[100%] h-[290px] max-[1350px]:h-[230px] max-[767px]:h-auto rounded-[20px] transition-all duration-300 border-none [box-shadow:0px_4px_21px_1px_#307BC41A] ${
                   isActive
                     ? "bg-[#64cfa9] shadow-hover-drop-shadow mb-[30px]"
                     : "bg-[#ffffff] shadow-main-content-drop-shadow"

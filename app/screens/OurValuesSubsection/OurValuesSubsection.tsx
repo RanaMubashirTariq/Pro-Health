@@ -41,11 +41,11 @@ export default function OurValuesSubsection() {
         Our Values
       </h2>
 
-      <div className="flex justify-center items-center flex-wrap px-[150px] max-[1780px]:px-[100px]   max-[1500px]:px-[50px] max-[1000px]:px-[25px] gap-[187px] max-[1900px]:gap-[130px] max-[1670px]:gap-[80px]   max-[1300px]:gap-[40px] max-[1100px]:gap-[30px]">
+      <div className="flex justify-center items-center flex-wrap px-[150px] max-[1780px]:px-[100px]   max-[1500px]:px-[50px] max-[1000px]:px-[25px] gap-[187px] max-[1900px]:gap-[130px] max-[1670px]:gap-[80px]   max-[1300px]:gap-[40px] max-[1100px]:gap-[30px] mt-[44px] max-[767px]:mt-0">
         {valueCards.map((card, index) => (
           <Card
             key={index}
-            className="group bg-[#64cfa91a] rounded-[25px] max-[800px]:w-[100%] max-[500px]:w-[100%]  w-[390px] max-[1300px]:w-[355px]  h-[417px] max-[1100px]:w-[280px] max-[1100px]:h-auto [box-shadow:0px_4px_21px_1px_#307BC41A] border-none transition-all duration-300"
+            className="group bg-[#64cfa91a] rounded-[25px] max-[800px]:w-[100%] max-[500px]:w-[100%]  w-[390px] max-[1300px]:w-[355px]  h-[417px] max-[1100px]:w-[280px] max-[1100px]:h-auto [box-shadow:0px_4px_21px_1px_#307BC41A] border-none transition-all duration-300 hover:-mt-[44px] max-[767px]:hover:mt-0"
           >
             <CardContent className="p-0">
               <div className="relative p-6  py-[70px] px-[47px] z-50 max-[1100px]:py-[30px] max-[1100px]:px-[20px]">
@@ -58,7 +58,7 @@ export default function OurValuesSubsection() {
                       {card.title}
                     </h3>
                   </div>
-                  <p className="font-['Poppins'] max-[1100px]:text-[14px]  max-[1100px]:leading-[22px]  text-[16px] leading-[26px] font-normal text-center text-[#0274760] opacity-60 overflow-hidden max-[1300px]:text-ellipsis max-[1300px]:line-clamp-5">
+                  <p className="font-['Poppins'] max-[1100px]:text-[14px]  max-[1100px]:leading-[22px]  text-[16px] leading-[26px] font-normal text-center text-[#0274760] opacity-60 overflow-hidden max-[1300px]:text-ellipsis max-[1300px]:line-clamp-5"> 
                     {card.description}
                   </p>
                 </div>

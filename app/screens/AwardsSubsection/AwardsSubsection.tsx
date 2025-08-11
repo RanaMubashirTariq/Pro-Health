@@ -31,7 +31,7 @@ export default function AwardsSubsection  () {
   ];
 
   return (
-    <section className="w-full py-[200px] max-[1500px]:py-[150px] max-[1100px]:py-[100px]  max-[1000px]:py-[40px]   px-[150px] max-[1800px]:px-[150px] max-[1780px]:px-[100px] max-[1500px]:px-[50px] max-[1000px]:px-[25px]  ">
+    <section className="w-full py-[200px] max-[1500px]:py-[100px] max-[1100px]:py-[100px]  max-[1000px]:py-[40px]   px-[150px] max-[1800px]:px-[150px] max-[1780px]:px-[100px] max-[1500px]:px-[50px] max-[1000px]:px-[25px]  ">
         <h2 className="font-['Figtree'] max-[1500px]:text-[56px] max-[1500px]:leading-[66px] font-bold text-[#083124]  text-[72px] max-[1000px]:text-[36px] max-[1000px]:leading-[48px]  leading-[82px] mb-18 max-[1500px]:mb-[50px] max-[1000px]:mb-[40px]    max-[1500px]:text-center">
           Awards
         </h2>
