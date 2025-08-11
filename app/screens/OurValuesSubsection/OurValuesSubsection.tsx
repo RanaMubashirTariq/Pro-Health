@@ -41,20 +41,20 @@ export default function OurValuesSubsection() {
         Our Values
       </h2>
 
-      <div className="flex justify-center items-center flex-wrap px-[150px] max-[1780px]:px-[100px]   max-[1500px]:px-[50px] max-[1000px]:px-[25px] gap-[187px] max-[1900px]:gap-[130px] max-[1670px]:gap-[80px]   max-[1300px]:gap-[40px] max-[1100px]:gap-[30px] mt-[44px] max-[767px]:mt-0">
+      <div className="flex justify-center items-center flex-wrap px-[150px] max-[1780px]:px-[100px]   max-[1550px]:px-[50px] max-[1000px]:px-[25px] gap-[187px] max-[1900px]:gap-[130px] max-[1670px]:gap-[80px]   max-[1500px]:gap-[40px] max-[1250px]:gap-[30px]  mt-[44px] max-[767px]:mt-0">
         {valueCards.map((card, index) => (
           <Card
             key={index}
-            className="group bg-[#64cfa91a] rounded-[25px] max-[800px]:w-[100%] max-[500px]:w-[100%]  w-[390px] max-[1300px]:w-[355px]  h-[417px] max-[1100px]:w-[280px] max-[1100px]:h-auto [box-shadow:0px_4px_21px_1px_#307BC41A] border-none transition-all duration-300 hover:-mt-[44px] max-[767px]:hover:mt-0"
+            className="group bg-[#64cfa91a] rounded-[25px] max-[800px]:w-[100%] max-[500px]:w-[100%]  w-[390px] max-[1400px]:w-[355px]  h-[417px] max-[1250px]:w-[280px] max-[1250px]:h-auto [box-shadow:0px_4px_21px_1px_#307BC41A] border-none transition-all duration-300 hover:-mt-[44px] max-[767px]:hover:mt-0"
           >
             <CardContent className="p-0">
-              <div className="relative p-6  py-[70px] px-[47px] z-50 max-[1100px]:py-[30px] max-[1100px]:px-[20px]">
+              <div className="relative p-6  py-[70px] px-[47px] z-50 max-[1250px]:py-[30px] max-[1250px]:px-[20px]">
                 <div className="flex flex-col items-center gap-[62px] gap-10 transition-all duration-300  hover:gap-[40px] max-[1100px]:hover:gap-5 max-[1100px]:gap-[30px]">
                   <div className="flex items-center  justify-center p-4 rounded-[30px] transition-all duration-300 group-hover:bg-[#d5f5ec] group-hover:w-[465px] max-[1300px]:group-hover:w-[400px]  max-[1100px]:group-hover:w-[320px] max-[1000px]:group-hover:max-w-[100%] max-[1100px]:group-hover:w-[100%]">
                     <div className="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] mr-4 sm:mr-5">
                       <img src={card.icon} alt={`${card.title}-pic`} />
                     </div>
-                    <h3 className="font-semibold font-['Figtree'] max-[1100px]:text-[28px]  text-[32px] text-[40px] leading-[50px] text-[#083124]">
+                    <h3 className="font-semibold font-['Figtree'] max-[1250px]:text-[28px]  text-[32px] text-[40px] leading-[50px] text-[#083124]">
                       {card.title}
                     </h3>
                   </div>
