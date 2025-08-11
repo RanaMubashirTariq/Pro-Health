@@ -12,7 +12,7 @@ export default function AppointmentSubsection  () {
   const reasonOptions = [
     { id: "routine", label: "Routine Checkup", checked: false },
     { id: "new-patient", label: "New Patient Visit", checked: true },
-    { id: "specific", label: "Specific Concern", checked: false },
+    { id: "specific", label:  "Specific Concern", checked: false },
   ];
 
   const departmentOptions = [
@@ -292,7 +292,7 @@ const handleClockClick = () => {
 
 
           {/* Submit Button */}
-          <Button className="mt-12 h-[50px] w-[163px] bg-[#083124] rounded-3xl shadow-button-drop-shadow">
+          <Button className="mt-12 h-[50px] w-[163px] bg-[#083124] rounded-3xl cursor-pointer">
             <span className="font-medium font-['Poppins']  text-white text-base tracking-[0.24px] leading-[26px]">
               Submit
             </span>

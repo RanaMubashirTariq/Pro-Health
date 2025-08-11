@@ -47,7 +47,7 @@ export default function TestimonialsSubsection  () {
       <div className="relative w-full ">
         {/* Timeline */}
         <div className="absolute right-1/2 transform -translate-x-1/2 max-[1100px]:right-[100px] max-[767px]:right-[100px] max-[500px]:right-[50px]  h-full flex flex-col items-center ">
-          <div className="relative h-full w-px  bg-gray-200 ">
+          <div className="relative h-full w-px  bg-[#64cfa9] ">
             <Badge className="absolute top-[63px] left-1/2 transform -translate-x-1/2 w-2.5 h-2.5 p-0 bg-[#64cfa9] rounded-[5px]" />
             <Badge className="absolute top-[280px] max-[1100px]:top-[250px] max-[800px]:top-[200px] left-1/2 transform -translate-x-1/2 w-[18px] h-[18px] p-0 bg-[#64cfa9] rounded-[9px]" />
             <Badge className="absolute top-[500px] max-[1100px]:top-[450px] max-[800px]:top-[350px] left-1/2 transform -translate-x-1/2 w-2.5 h-2.5 p-0 bg-[#64cfa9] rounded-[5px]" />

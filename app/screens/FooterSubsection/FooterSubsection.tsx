@@ -144,7 +144,7 @@ export default function FooterSubsection  () {
                   className="flex-1 border-none shadow-none font-['Poppins'] text-base text-[#083124] opacity-60 placeholder:text-[#083124] placeholder:opacity-60 focus-visible:ring-0"
                   placeholder="example@email.com"
                 />
-                <Button className="w-[163px] h-[50px] max-[500px]:w-[120px] bg-[#083124] rounded-3xl shadow-button-drop-shadow">
+                <Button className="w-[163px] h-[50px] max-[500px]:w-[120px] bg-[#083124] rounded-3xl cursor-pointer">
                   <span className="font-['Poppins'] font-medium text-white text-base tracking-[0.24px] mr-2">
                     Submit
                   </span>
@@ -167,11 +167,11 @@ export default function FooterSubsection  () {
                 Follow Us
               </span>
                    <div className="flex justify-between w-[155px] h-5">
-                        <img className="w-5 h-5 object-cover" src='/facebook.png' alt="Social media" />
-                        <img className="w-5 h-5 object-cover" src='/youtube.png' alt="Social media" />
-                        <img className="w-5 h-5 object-cover" src='/twitter.png' alt="Social media" />
-                        <img className="w-5 h-5 object-cover" src='/linkedin.png' alt="Social media" />
-                        <img className="w-5 h-5 object-cover" src='/instagram.png' alt="Social media" />
+                        <img className="w-5 h-5 object-cover cursor-pointer transform transition-transform duration-300 hover:scale-90" src='/facebook.png' alt="Social media" />
+                        <img className="w-5 h-5 object-cover cursor-pointer transform transition-transform duration-300 hover:scale-90" src='/youtube.png' alt="Social media" />
+                        <img className="w-5 h-5 object-cover cursor-pointer transform transition-transform duration-300 hover:scale-90" src='/twitter.png' alt="Social media" />
+                        <img className="w-5 h-5 object-cover cursor-pointer transform transition-transform duration-300 hover:scale-90" src='/linkedin.png' alt="Social media" />
+                        <img className="w-5 h-5 object-cover cursor-pointer transform transition-transform duration-300 hover:scale-90" src='/instagram.png' alt="Social media" />
                    </div>
             </div>
             <div className="font-['Poppins'] font-normal text-white text-base opacity-50 max-[767px]:text-center">

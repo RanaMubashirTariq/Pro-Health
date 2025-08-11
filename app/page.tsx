@@ -65,7 +65,7 @@ export default function Home() {
       <div id="testimonials"> {/* Added ID */}
         <TestimonialsSubsection/>
       </div>
-      <CtaSubsection/>
+      {/* <CtaSubsection/> */}
       <div id="blog">
         <OurBlogsSubsection/>
       </div>

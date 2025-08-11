@@ -207,7 +207,7 @@ const CustomDropdown = ({
 
         {/* Booking Section */}
       </div>
-           <Card className="absolute top-[991px] max-[1500px]:top-[720px] max-[1022px]:top-[520px] max-[1022px]:hidden z-10 left-1/2 -translate-x-1/2    w-full max-w-[1620px] max-[1500px]:max-w-[1320px] max-[1500px]:max-w-[1120px] max-[1650px]:max-w-[1320px] max-[1200px]:max-w-[1050px] max-[1100px]:max-w-[900px]   h-[212px] max-[1100px]:h-auto bg-[#eafff7] rounded-[15px] [box-shadow:0px_4px_21px_1px_#307BC41A] border-none">
+           <Card className="opacity-100  absolute top-[991px] max-[1500px]:top-[720px] max-[1022px]:top-[520px] max-[1022px]:hidden z-10 left-1/2 -translate-x-1/2    w-full max-w-[1620px] max-[1500px]:max-w-[1320px] max-[1500px]:max-w-[1120px] max-[1650px]:max-w-[1320px] max-[1200px]:max-w-[1050px] max-[1100px]:max-w-[900px]   h-[212px] max-[1100px]:h-auto bg-[#eafff8] rounded-[15px] [box-shadow:0px_4px_21px_1px_#307BC41A] border-none">
           <CardContent className="flex items-center justify-center h-full p-0 ">
             <div className="flex items-center w-full justify-between px-[114px] max-[1500px]:px-[50px] max-[500px]:px-[25px]  max-[1100px]:flex-wrap  max-[1100px]:justify-between max-[767px]:flex-col max-[1100px]:items-start  max-[1100px]:gap-[30px] max-[1100px]:py-[30px]">
               {bookingOptions.map((option, index) => (
@@ -238,7 +238,7 @@ const CustomDropdown = ({
                 </div>
               ))}
 
-              <Button className="w-[163px] h-[50px] bg-[#64cfa9] rounded-3xl shadow-button-drop-shadow max-[1100px]:mr-[50px]">
+              <Button className="w-[163px] h-[50px] bg-[#64cfa9] rounded-3xl  max-[1100px]:mr-[50px]">
                 <span className="font-['Poppins'] font-medium text-[#eafff7] text-base tracking-[0.24px] leading-[26px]">
                   Book Now
                 </span>
