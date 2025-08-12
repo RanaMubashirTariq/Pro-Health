@@ -80,7 +80,7 @@ const CustomDropdown = ({
     <div className="relative w-full max-w-[186px] max-[1000px]:max-w-full z-20">
       <div
         onClick={() => setOpen(!open)}
-        className=" z-10 bg-transparent font-['Poppins'] font-normal opacity-60 text-dark-blue text-[20px] leading-[26px] border-none rounded-[10px]  py-1 cursor-pointer flex justify-between items-center gap-10"
+        className=" z-10 bg-transparent font-['Poppins'] font-normal opacity-60 text-[#274760] text-[20px] leading-[26px] border-none rounded-[10px]  py-1 cursor-pointer flex justify-between items-center gap-10"
       >
         <span>{selected}</span>
         <svg
@@ -101,7 +101,7 @@ const CustomDropdown = ({
                 setSelected(option);
                 setOpen(false);
               }}
-              className="px-4 py-2 opacity-60 hover:bg-[#083124] hover:text-white cursor-pointer  text-dark-blue font-['Poppins'] font-normal  text-[20px] leading-[26px] max-[500px]:py-3"
+              className="px-4 py-2 opacity-60 hover:bg-[#083124] hover:text-white cursor-pointer  text-[#274760] font-['Poppins'] font-normal  text-[20px] leading-[26px] max-[500px]:py-3"
             >
               {option}
             </li>
