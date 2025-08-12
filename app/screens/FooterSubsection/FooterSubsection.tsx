@@ -52,8 +52,8 @@ export default function FooterSubsection  () {
   ];
 
   return (
-          <div className="mt-[200px] max-[1500px]:mt-[140px] max-[1000px]:mt-[100px] relative w-full h-[756px] max-[1400px]:h-[950px]   max-[1000px]:h-[890px] max-[767px]:h-[1180px] max-[500px]:h-[1130px] max-[410px]:h-[1150px] max-[350px]:h-[1450px]">
-                   <footer className=" w-full  h-[756px] max-[1400px]:h-[1000px]  max-[767px]:h-[1220px] max-[500px]:h-[1080px] max-[350px]:h-[1380px] bg-transparent  pt-[240px] max-[1000px]:pt-[180px]  absolute top-0 left-1/2 -translate-x-1/2 bg-[url('/Vector-8.png')] bg-cover bg-no-repeat bg-center">
+          <div className="mt-[200px] max-[1500px]:mt-[140px] max-[1000px]:mt-[100px] relative w-full h-[756px] max-[1400px]:h-[950px] max-[1100px]:h-[950px]  max-[1000px]:h-[880px] max-[767px]:h-[1180px] max-[500px]:h-[1020px] max-[410px]:h-[1040px] max-[350px]:h-[1280px]">
+                   <footer className=" w-full  h-[756px] max-[1400px]:h-[1000px] max-[1100px]:h-[950px] max-[767px]:h-[1220px] max-[500px]:h-[1000px] max-[350px]:h-[1200px] bg-transparent  pt-[240px] max-[1000px]:pt-[180px]  absolute top-0 left-1/2 -translate-x-1/2 bg-[url('/Vector-8.png')] bg-cover bg-no-repeat bg-center">
                     <img src="/logo-4.png" className="absolute -top-[96px] left-1/2 -translate-x-1/2 w-[258px] h-[279px] object-cover" alt="" />
 
 
@@ -141,7 +141,7 @@ export default function FooterSubsection  () {
             <Card className="w-full border border-solid border-[#08312480] rounded-[36px] p-0 bg-transparent max-[500px]:rounded-[25px]">
               <div className="flex items-center p-3.5">
                 <Input
-                  className="flex-1 border-none shadow-none font-['Poppins'] text-base text-[#083124] opacity-60 placeholder:text-[#083124] placeholder:opacity-60 focus-visible:ring-0 max-[500px]:text-[14px] max-[500px]:leading-[24px]"
+                  className="flex-1 border-none shadow-none font-['Poppins'] text-base text-black opacity-60 placeholder:text-[#083124] placeholder:opacity-80 placeholder:text-black focus-visible:ring-0 max-[500px]:text-[14px] max-[500px]:leading-[24px]"
                   placeholder="example@email.com"
                 />
                 <Button className="w-[163px] h-[50px]  bg-[#083124] rounded-3xl cursor-pointer max-[500px]:h-[40px] max-[500px]:w-[110px]">

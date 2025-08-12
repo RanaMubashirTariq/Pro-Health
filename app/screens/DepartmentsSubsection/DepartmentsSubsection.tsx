@@ -74,7 +74,7 @@ const departments = [
                 key={`department-${index}`}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
-                className={`w-full max-w-[253px] max-[767px]:max-w-[100%] h-[290px] max-[1350px]:h-[230px] max-[767px]:h-auto rounded-[20px] transition-all duration-300 border-none [box-shadow:0px_4px_21px_1px_#307BC41A] ${
+                className={`w-full max-w-[253px] max-[1000px]:max-w-[300px] max-[767px]:max-w-[100%] h-[290px] max-[1350px]:h-[230px] max-[767px]:h-auto rounded-[20px] transition-all duration-300 border-none [box-shadow:0px_4px_21px_1px_#307BC41A] ${
                   isActive
                     ? "bg-[#64cfa9] shadow-hover-drop-shadow mb-[30px]"
                     : "bg-[#ffffff] shadow-main-content-drop-shadow"

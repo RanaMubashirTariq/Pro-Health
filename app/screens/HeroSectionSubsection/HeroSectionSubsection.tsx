@@ -207,7 +207,7 @@ const CustomDropdown = ({
 
         {/* Booking Section */}
       </div>
-           <Card className=" absolute top-[991px] max-[1500px]:top-[720px] max-[1022px]:top-[520px] max-[1022px]:hidden z-10 left-1/2 -translate-x-1/2    w-full max-w-[1620px] max-[1500px]:max-w-[1320px] max-[1500px]:max-w-[1120px] max-[1650px]:max-w-[1320px] max-[1200px]:max-w-[1050px] max-[1100px]:max-w-[900px]   h-[212px] max-[1100px]:h-auto bg-[#eafff8] rounded-[15px] [box-shadow:0px_4px_21px_1px_#307BC41A] border-none">
+           <Card className=" absolute top-[991px] max-[1500px]:top-[720px] max-[1022px]:top-[520px] max-[1022px]:hidden z-10 left-1/2 -translate-x-1/2    w-full max-w-[1620px] max-[1500px]:max-w-[1320px] max-[1500px]:max-w-[1220px] max-[1650px]:max-w-[1450px] max-[1650px]:mr-[40px] max-[1200px]:max-w-[1050px] max-[1100px]:max-w-[900px]   h-[212px] max-[1100px]:h-auto bg-[#eafff8] rounded-[15px] [box-shadow:0px_4px_21px_1px_#307BC41A] border-none">
           <CardContent className="flex items-center justify-center h-full p-0 ">
             <div className="flex items-center w-full justify-between px-[114px] max-[1500px]:px-[50px] max-[500px]:px-[25px]  max-[1100px]:flex-wrap  max-[1100px]:justify-between max-[767px]:flex-col max-[1100px]:items-start  max-[1100px]:gap-[30px] max-[1100px]:py-[30px]">
               {bookingOptions.map((option, index) => (
@@ -219,7 +219,7 @@ const CustomDropdown = ({
                   />
 
                   <div className="flex flex-col">
-                    <span className="font-['Poppins'] font-semibold text-dark-blue text-base leading-[26px]">
+                    <span className="font-['Poppins'] font-semibold text-dark-blue text-base leading-[26px] text-[#274760]">
                       {option.label}
                     </span>
 
@@ -230,7 +230,7 @@ const CustomDropdown = ({
                       setSelected={setToCity}
         />
                     ) : (
-                      <span className="font-['Poppins'] font-normal text-dark-blue text-xl leading-[26px] opacity-60 mt-1">
+                      <span className="font-['Poppins'] font-normal text-[#274760] text-xl leading-[26px] opacity-60 mt-1 text-[#274760]">
                         {option.value}
                       </span>
                     )}

@@ -71,7 +71,7 @@ export default function TestimonialsSubsection  () {
 
           {/* Middle testimonial - highlighted */}
           <div className="flex items-center w-full max-w-[1630px] justify-between mb-[56px] max-[1750px]:pr-[50px] max-[500px]:max-w-[400px] max-[340px]:max-w-[100%] max-[767px]:mb-8">
-            <Card className="w-full max-w-[580px] max-[1500px]:max-w-[480px] max-[1100px]:max-w-[580px] max-[800px]:max-w-[480px] max-[767px]:max-w-[450px] max-[500px]:max-w-[400px] max-[346px]:max-w-[100%]   h-[170px] max-[800px]:h-[130px] max-[500px]:h-[80px]  bg-[#00b67a1a] border-none [box-shadow:0px_4px_21px_1px_#307BC41A] rounded-[25px]  ml-16 max-[1400px]:ml-[20px] max-[1100px]:ml-[100px] max-[767px]:ml-0 max-[767px]:mr-[40px] max-[767px]:ml-0">
+            <Card className="w-full max-w-[580px] max-[1500px]:max-w-[480px] max-[1100px]:max-w-[580px] max-[830px]:max-w-[480px] max-[767px]:max-w-[450px] max-[500px]:max-w-[400px] max-[346px]:max-w-[100%]   h-[170px] max-[800px]:h-[130px] max-[500px]:h-[80px]  bg-[#00b67a1a] border-none [box-shadow:0px_4px_21px_1px_#307BC41A] rounded-[25px]  ml-16 max-[1400px]:ml-[20px] max-[1100px]:ml-[100px] max-[767px]:ml-0 max-[767px]:mr-[40px] max-[767px]:ml-0">
               <CardContent className="flex items-center p-0 h-full w-full">
                 <img className="w-[126px] h-[126px] ml-[75px] max-[800px]:w-[90px] max-[800px]:h-[90px] max-[500px]:w-[60px] max-[500px]:h-[60px]  max-[1500px]:ml-[20px] max-[432px]:ml-[10px] object-cover bg-center" src='/second.png' />
                 <div className="ml-12 max-[500px]:ml-[10px]">
