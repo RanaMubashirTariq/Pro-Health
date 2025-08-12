@@ -53,7 +53,7 @@ const departments = [
 
 
   return ( 
-     <section className="relative w-full max-w-[1922px]  h-[571px] max-[1350px]:h-[471px] mt-[103px] px-[123px] max-[1500px]:px-[50px] max-[1000px]:px-[25px] max-[1200px]:h-[700px] max-[1000px]:h-[1100px] max-[767px]:h-[1500px] max-[500px]:h-[1500px]">
+     <section className="relative w-full max-w-[1922px]  h-[571px] max-[1350px]:h-[471px] mt-[103px] max-[1000px]:mt-[60px] max-[767px]:mt-10 px-[123px] max-[1500px]:px-[50px] max-[1000px]:px-[25px] max-[1200px]:h-[700px] max-[1000px]:h-[1100px] max-[767px]:h-[1500px] max-[500px]:h-[1500px]">
     <div className="relative w-full h-[449px] max-[1350px]:h-[350px] max-[1000px]:h-[250px]  py-24  bg-custom-gradient rounded-[25px] overflow-hidden">
               
                <img src="/vector-5.svg" className="absolute top-0 left-0 w-[623px] h-[655px] z-0" alt="" />
@@ -61,7 +61,7 @@ const departments = [
 
     </div>
                  <div className="w-full max-w-[1618px]  px-[13px] max-[1800px]:px-[70px]  max-[767px]:px-[25px] absolute top-[110px] left-1/2 max-[1500px]:top-[110px] max-[1350px]:top-[60px] max-[1100px]:top-[110px] -translate-x-1/2 z-10 mx-auto">
-        <h2 className="text-[72px] max-[1500px]:text-[56px] max-[1500px]:leading-[66px] max-[1000px]:text-[36px] max-[1000px]:leading-[48px] leading-[82px] font-bold text-[#083124] text-center mb-16 font-['Figtree']">
+        <h2 className="text-[72px] max-[1500px]:text-[56px] max-[1500px]:leading-[66px] max-[1000px]:text-[36px] max-[1000px]:leading-[48px] leading-[82px] font-bold text-[#083124] text-center mb-16 font-['Figtree'] max-[500px]:text-[28px] max-[500px]:leading-[38px]">
           Departments
         </h2>
 

@@ -118,11 +118,11 @@ const CustomDropdown = ({
 
 
   return (
-    <section className="relative w-full h-[1203px] max-[1500px]:h-[900px] max-[1100px]:h-[1000px] max-[1022px]:h-auto">
-      <div className="relative w-full h-[1097px] max-[1500px]:h-[800px] max-[1022px]:h-[450px] max-[767px]:h-[500px] bg-custom-gradient ">
-                      <img src="/Vector-3.png" className="absolute bottom-0 left-0 w-[623px] h-[655px] z-0" alt="" />
-               <img src="/Vector-2.png" className="absolute -top-[200px] right-0 w-[623px] h-[655px] z-0 max-[800px]:hidden" alt="" />
-               <img src="/Vector-1.png" className="absolute top-[50px] -right-[200px] w-[872px] h-[1030px]  z-0 max-[1022px]:hidden" alt="" />
+    <section className="relative w-full h-[1203px] max-[1500px]:h-[900px] max-[1100px]:h-[1000px] max-[1022px]:h-auto ">
+      <div className="relative w-full h-[1097px] max-[1500px]:h-[800px] max-[1022px]:h-[450px] max-[767px]:h-auto bg-custom-gradient pb-[30px] ">
+                      <img src="/Vector-3.png" className="absolute bottom-0 left-0 w-[623px] h-[655px] z-0 max-[767px]:w-[400px] max-[767px]:h-[500px] max-[767px]:top-[50px] max-[1022px]:w-[400px] max-[500px]:w-[200px] max-[1022px]:h-[350px] max-[1022px]:top-[100px]" alt="" />
+               <img src="/Vector-2.png" className="absolute -top-[200px] right-0 w-[623px] h-[655px] z-0 max-[767px]:w-[400px] max-[767px]:h-[500px] max-[767px]:-top-[300px] max-[1022px]:w-[400px] max-[1022px]:h-[500px] max-[1022px]:-top-[200px]" alt="" />
+               <img src="/Vector-1.png" className="absolute top-[50px] -right-[200px] w-[872px] h-[1030px]  z-0 max-[767px]:w-[400px] max-[767px]:h-[500px] max-[767px]:-top-[30px] max-[1022px]:w-[600px] max-[1022px]:h-[600px] max-[1022px]:top-[50px]" alt="" />
         {/* Background image would go here */}
          <div className="w-full h-auto bg-[url('/blur-back.jpg')]"/>
         {/* Navigation */}
@@ -167,12 +167,12 @@ const CustomDropdown = ({
         <div className="relative flex w-full mt-[189px]  max-[1500px]:mt-[100px] max-[1000px]:mt-[40px] pl-[150px] max-[1780px]:pl-[100px] max-[1500px]:px-[50px] max-[1022px]:px-[25px]">
                        
           <div className="w-[912px] max-[1880px]:w-[612px]  max-[1022px]:w-[100%] flex flex-col items-start max-[1022px]:items-center">
-                 <div className="w-full flex flex-col gap-[29px]">
-                                   <h1 className="w-[908px] max-[1880px]:w-[600px] max-[1022px]:w-[100%] max-[1022px]:text-center  max-[1022px]:text-[36px] max-[1022px]:leading-[48px]  font-bold text-[94px] max-[1500px]:text-[72px] max-[1500px]:leading-[82px] font-['Figtree'] text-[#083023] leading-[104px] tracking-[0%]">
+                 <div className="w-full flex flex-col gap-[29px] max-[767px]:gap-5">
+                                   <h1 className="w-full max-w-[908px] max-[1880px]:max-w-[600px] max-[500px]:text-[28px] max-[500px]:leading-[38px]  max-[1022px]:max-w-[400] max-[500px]:max-w-[300px] max-[1022px]:text-center max-[1022px]:mx-auto  max-[1022px]:text-[36px]  max-[1022px]:leading-[48px]  font-bold text-[94px] max-[1500px]:text-[72px] max-[1500px]:leading-[82px] font-['Figtree'] text-[#083023] leading-[104px] tracking-[0%]">
               Your Partner in Health and Wellness
             </h1>
 
-            <p className="w-[646px] max-[1880px]:w-[550px] max-[1022px]:w-[100%]  font-['Poppins'] font-normal text-[20px] max-[767px]:text-[16px] max-[767px]:leading-[26px] text-[#083124] leading-[30px] max-[1022px]:text-center">
+            <p className="w-full max-w-[646px] max-[1880px]:max-w-[550px] max-[1022px]:max-w-[600] max-[1022px]:mx-auto font-['Poppins'] font-normal text-[20px] max-[767px]:text-[14px] max-[767px]:leading-[22px] text-[#083124] leading-[30px] max-[1022px]:text-center">
               We are committed to providing you with the best medical and
               healthcare services to help you live healthier and happier.
             </p>
@@ -180,12 +180,12 @@ const CustomDropdown = ({
 
             <Button
               variant="ghost"
-              className="mt-[100px] max-[1500px]:mt-[50px] max-[767px]:mt-[30px]  p-0 h-auto flex items-center gap-4 hover:bg-transparent"
+              className="mt-[100px] max-[1500px]:mt-[50px] max-[767px]:mt-[20px]  p-0 h-auto flex items-center gap-4 hover:bg-transparent"
             >
-              <div className="w-[50px] h-[50px] relative">
+              <div className="w-[50px] h-[50px] relative max-[767px]:w-[30px] max-[767px]:h-[30px]">
                 <img className="w-full h-full" src='/video-logo.png' alt="Vector" />
               </div>
-              <span className="font-['Poppins'] font-normal leading-[30px] text-xl text-[#083124]">
+              <span className="font-['Poppins'] font-normal leading-[30px] text-xl max-[767px]:text-[13px] max-[767px]:leading-[22px] text-[#083124]">
                 See how we work
               </span>
             </Button>
@@ -207,7 +207,7 @@ const CustomDropdown = ({
 
         {/* Booking Section */}
       </div>
-           <Card className="opacity-100  absolute top-[991px] max-[1500px]:top-[720px] max-[1022px]:top-[520px] max-[1022px]:hidden z-10 left-1/2 -translate-x-1/2    w-full max-w-[1620px] max-[1500px]:max-w-[1320px] max-[1500px]:max-w-[1120px] max-[1650px]:max-w-[1320px] max-[1200px]:max-w-[1050px] max-[1100px]:max-w-[900px]   h-[212px] max-[1100px]:h-auto bg-[#eafff8] rounded-[15px] [box-shadow:0px_4px_21px_1px_#307BC41A] border-none">
+           <Card className=" absolute top-[991px] max-[1500px]:top-[720px] max-[1022px]:top-[520px] max-[1022px]:hidden z-10 left-1/2 -translate-x-1/2    w-full max-w-[1620px] max-[1500px]:max-w-[1320px] max-[1500px]:max-w-[1120px] max-[1650px]:max-w-[1320px] max-[1200px]:max-w-[1050px] max-[1100px]:max-w-[900px]   h-[212px] max-[1100px]:h-auto bg-[#eafff8] rounded-[15px] [box-shadow:0px_4px_21px_1px_#307BC41A] border-none">
           <CardContent className="flex items-center justify-center h-full p-0 ">
             <div className="flex items-center w-full justify-between px-[114px] max-[1500px]:px-[50px] max-[500px]:px-[25px]  max-[1100px]:flex-wrap  max-[1100px]:justify-between max-[767px]:flex-col max-[1100px]:items-start  max-[1100px]:gap-[30px] max-[1100px]:py-[30px]">
               {bookingOptions.map((option, index) => (

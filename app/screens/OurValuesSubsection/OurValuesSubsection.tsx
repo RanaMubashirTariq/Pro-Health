@@ -36,8 +36,8 @@ export default function OurValuesSubsection() {
   ];
 
   return (
-    <section className="relative w-full mt-[300px] max-[1500px]:mt-[150px] max-[1000px]:mt-[60px] flex flex-col gap-[72px] max-[1500px]:gap-[50px]">
-      <h2 className="text-center font-bold text-[72px] max-[1500px]:text-[56px] max-[1500px]:leading-[66px] max-[1022px]:text-[36px]  max-[1022px]:leading-[56px] leading-[82px] font-['Figtree'] text-[#083124]">
+    <section className="relative w-full mt-[300px] max-[1500px]:mt-[150px] max-[1000px]:mt-[60px] max-[767px]:mt-10 flex flex-col gap-[72px] max-[1500px]:gap-[50px]">
+      <h2 className="text-center font-bold text-[72px] max-[1500px]:text-[56px] max-[1500px]:leading-[66px] max-[1022px]:text-[36px] max-[500px]:text-[28px] max-[500px]:leading-[38px]    max-[1022px]:leading-[56px] leading-[82px] font-['Figtree'] text-[#083124]">
         Our Values
       </h2>
 
@@ -54,11 +54,11 @@ export default function OurValuesSubsection() {
                     <div className="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] mr-4 sm:mr-5">
                       <img src={card.icon} alt={`${card.title}-pic`} />
                     </div>
-                    <h3 className="font-semibold font-['Figtree'] max-[1250px]:text-[28px]  text-[32px] text-[40px] leading-[50px] text-[#083124]">
+                    <h3 className="font-semibold font-['Figtree'] max-[1250px]:text-[28px] max-[500px]:text-[22px] max-[500px]:leading-[32px]  text-[32px] text-[40px] leading-[50px] text-[#083124]">
                       {card.title}
                     </h3>
                   </div>
-                  <p className="font-['Poppins'] max-[1100px]:text-[14px]  max-[1100px]:leading-[22px]  text-[16px] leading-[26px] font-normal text-center text-[#0274760] opacity-60 overflow-hidden max-[1300px]:text-ellipsis max-[1300px]:line-clamp-5"> 
+                  <p className="font-['Poppins'] max-[1100px]:text-[14px]  max-[1100px]:leading-[22px]  text-[16px] leading-[26px] font-normal text-center text-[#274760] opacity-60 overflow-hidden max-[1300px]:text-ellipsis max-[1300px]:line-clamp-5 "> 
                     {card.description}
                   </p>
                 </div>

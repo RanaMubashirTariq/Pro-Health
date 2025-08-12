@@ -93,10 +93,10 @@ const handleClockClick = () => {
     <section className="relative w-full py-[249px] max-[1500px]:py-[100px] max-[1000px]:py-[40px] mt-16 max-[1880px]:px-[150px] max-[1780px]:px-[100px] max-[1750px]:px-[100px]  max-[1000px]:px-[25px]  max-[1500px]:px-[50px]">
       <div className="relative z-10 container mx-auto ">
         <div className="flex flex-col mb-12">
-          <h3 className="font-semibold text-[#00b67a] max-[767px]:text-[24px] max-[767px]:leading-[34px] text-[32px] max-[767px]:text-center leading-[50px]">
+          <h3 className="font-semibold text-[#00b67a] max-[767px]:text-[24px] max-[767px]:leading-[34px] text-[32px] max-[500px]:text-[22px] max-[500px]:leading-[32px] max-[767px]:text-center leading-[50px]">
             BOOK AN
           </h3>
-          <h2 className="font-['Figtree'] font-bold text-[#083124] text-[72px] max-[1500px]:text-[56px] max-[1500px]:leading-[66px] max-[1000px]:text-[36px] max-[1000px]:text-[48px] max-[767px]:text-center max-[330px]:text-[34px] leading-[82px]">
+          <h2 className="font-['Figtree'] font-bold text-[#083124] text-[72px] max-[1500px]:text-[56px] max-[1500px]:leading-[66px] max-[1000px]:text-[36px] max-[1000px]:text-[48px] max-[500px]:text-[28px] max-[500px]:leading-[38px] max-[767px]:text-center max-[330px]:text-[34px] leading-[82px]">
             Appointment
           </h2>
         </div>
@@ -107,14 +107,14 @@ const handleClockClick = () => {
             <div className="flex flex-col gap-3">
               <Label
                 htmlFor="name"
-                className="font-normal font-['Poppins'] text-[#083124] text-base leading-[26px]"
+                className="font-normal font-['Poppins'] text-[#083124] text-base  max-[500px]:text-[14px] max-[500px]:leading-[22px] leading-[26px]"
               >
                 Name
               </Label>
               <Input
                 id="name"
                 defaultValue="David John"
-                className="h-20 rounded-[30px]  font-['Poppins']  border-[#083124] opacity-50 px-8 py-[27px] max-[767px]:h-15 max-[767px]:py-[10px] max-[1300px]:h-10 font-normal text-[#083124] text-base leading-[26px]"
+                className="h-20 rounded-[30px]  max-[767px]:rounded-[20px] font-['Poppins']  border-[#083124] opacity-50 px-8 py-[27px] max-[767px]:h-15 max-[767px]:py-[10px] max-[1300px]:h-10 font-normal text-[#083124] text-base max-[500px]:text-[14px] max-[500px]:leading-[22px] max-[500px]:px-5 max-[500px]:h-[45px] leading-[26px]"
               />
             </div>
 
@@ -129,12 +129,12 @@ const handleClockClick = () => {
               <Input
                 id="phone"
                 defaultValue="(123) 456 - 789"
-                className="h-20 rounded-[30px] font-['Poppins']  border-[#083124] opacity-50 px-8 py-[27px] max-[767px]:h-15 max-[767px]:py-[10px] max-[1300px]:h-10 font-normal text-[#083124] text-base leading-[26px]"
+                className="h-20 rounded-[30px] max-[767px]:rounded-[20px] max-[500px]:text-[14px] max-[500px]:leading-[22px] max-[500px]:px-5 max-[500px]:h-[45px] font-['Poppins']  border-[#083124] opacity-50 px-8 py-[27px] max-[767px]:h-15 max-[767px]:py-[10px] max-[1300px]:h-10 font-normal text-[#083124] text-base leading-[26px]"
               />
             </div>
 
             {/* Medical Record Number Field */}
-            <div className="flex flex-col gap-3 md:col-span-2 mt-[22px]">
+            <div className="flex flex-col gap-3 md:col-span-2 mt-[22px] max-[767px]:mt-0">
               <Label
                 htmlFor="medical-record"
                 className="font-normal font-['Poppins']  text-[#083124] text-base leading-[26px]"
@@ -144,7 +144,7 @@ const handleClockClick = () => {
               <Input
                 id="medical-record"
                 defaultValue="123456-7890-0987"
-                className="h-20 rounded-[30px] font-['Poppins']  border-[#083124] opacity-50 px-8 py-[27px] max-[767px]:h-15 max-[767px]:py-[10px] max-[1300px]:h-10 font-normal text-[#083124] text-base leading-[26px]"
+                className="h-20 rounded-[30px] max-[767px]:rounded-[20px] max-[500px]:text-[14px] max-[500px]:leading-[22px] max-[500px]:px-5 max-[500px]:h-[45px] font-['Poppins']  border-[#083124] opacity-50 px-8 py-[27px] max-[767px]:h-15 max-[767px]:py-[10px] max-[1300px]:h-10 font-normal text-[#083124] text-base leading-[26px]"
               />
             </div>
 
@@ -164,16 +164,16 @@ const handleClockClick = () => {
           value={selectedDate}
           readOnly
           placeholder="Agust 24 , 2023"
-          className="h-20 rounded-[30px] font-['Poppins'] 
+          className="h-20 rounded-[30px] max-[767px]:rounded-[20px] max-[500px]:text-[14px] max-[500px]:leading-[22px] max-[500px]:pl-[50px] max-[500px]:h-[45px] font-['Poppins'] 
             max-[767px]:py-[10px] max-[767px]:h-15 max-[1300px]:h-10 
             border-[#083124] opacity-50 pl-[67px] py-[27px] 
             font-normal text-[#083124] text-base leading-[26px]"
         />
 
         {/* Calendar Icon */}
-        <CalendarIcon
+        <img src='/clander.png'
           onClick={handleIconClick}
-          className="absolute w-5 h-5 top-[30px] max-[1300px]:top-[20px] left-8 opacity-60 cursor-pointer"
+          className="text-[#] absolute w-5 h-5 top-[30px] max-[1300px]:top-[20px] left-8 max-[500px]:top-[13px] max-[500px]:left-4 opacity-60 cursor-pointer"
         />
 
         {/* Hidden Native Date Picker */}
@@ -201,7 +201,7 @@ const handleClockClick = () => {
     value={time}
     readOnly
     placeholder="3:30"
-    className="h-20 rounded-[30px] font-['Poppins'] 
+    className="h-20 rounded-[30px] max-[767px]:rounded-[20px] max-[500px]:text-[14px] max-[500px]:leading-[22px] max-[500px]:pl-[50px] max-[500px]:h-[45px] font-['Poppins'] 
       max-[767px]:py-[10px] max-[767px]:h-15 max-[1300px]:h-10 
       border-[#083124] opacity-50 pl-[67px] py-[27px] 
       font-normal text-[#083124] text-base leading-[26px]"
@@ -210,11 +210,11 @@ const handleClockClick = () => {
   <ClockIcon
     onClick={handleClockClick}
     className="absolute w-5 h-5 top-[30px] 
-      max-[1300px]:top-[17px] max-[767px]:top-[20px] left-8 opacity-60 cursor-pointer"
+      max-[1300px]:top-[17px] max-[767px]:top-[20px] max-[500px]:top-[13px] max-[500px]:left-4 left-8 opacity-60 cursor-pointer text-[#083124]"
   />
 
   {/* AM/PM span */}
-  <span className="absolute top-[27px] max-[1300px]:top-[15px] max-[767px]:top-[18px] right-[67px] opacity-60 font-normal text-[#083124] text-base leading-[26px]">
+  <span className="absolute top-[27px] max-[1300px]:top-[15px] max-[767px]:top-[18px] max-[500px]:top-[10px] max-[500px]:right-8 right-[67px] opacity-60 font-normal text-[#083124] text-base leading-[26px]">
     {amPm}
   </span>
 </div>
@@ -223,11 +223,11 @@ const handleClockClick = () => {
           
 
           {/* Reason for Visit */}
-          <div className="mt-[48px]">
-            <Label className="block mb-2 font-normal text-[#083124] text-base">
+          <div className="mt-[48px] max-[500px]:mt-[30px]">
+            <Label className="block mb-2 font-normal text-[#083124] text-base max-[500px]:text-[14px]">
               Reason for Visit
             </Label>
-            <div className="flex flex-wrap gap-10">
+            <div className="flex flex-wrap gap-10  max-[500px]:gap-5">
               {reasonOptions.map((option) => (
                 <div key={option.id} className="flex items-center space-x-2">
                   <Radio
@@ -236,7 +236,7 @@ const handleClockClick = () => {
                           color: "#083124",
                           width: '20px',
                           height : '20px',
-                          marginRight:'15px',                 // unchecked state border
+                          marginRight:'15px',              // unchecked state border
                           "&.Mui-checked": {
                             color: "#083124",
                            width: '20px',
@@ -248,7 +248,7 @@ const handleClockClick = () => {
                           },
                         }}
                   />
-                  <Label htmlFor={option.id} className="opacity-60 text-[#083124] font-['Poppins'] font-normal text-base leading-[26px">
+                  <Label htmlFor={option.id} className="opacity-60 text-[#083124] font-['Poppins'] font-normal text-base max-[500px]:text-[14px] max-[500px]:leading-[24px] leading-[26px">
                     {option.label}
                   </Label>
                 </div>
@@ -257,11 +257,11 @@ const handleClockClick = () => {
           </div>
 
           {/* Department */}
-               <div className="mt-[42px]">
-            <Label className="block mb-2 font-normal text-[#083124] text-base">
+               <div className="mt-[42px] max-[500px]:mt-[30px]">
+            <Label className="block mb-2 font-normal text-[#083124] text-base max-[500px]:text-[14px]">
               Department
             </Label>
-            <div className="flex flex-wrap gap-10">
+            <div className="flex flex-wrap gap-10 max-[500px]:gap-5">
               {departmentOptions.map((option) => (
                 <div key={option.id} className="flex items-center space-x-2">
                   <Radio
@@ -282,7 +282,7 @@ const handleClockClick = () => {
                           },
                         }}
                   />
-                  <Label htmlFor={option.id} className="opacity-60 text-[#083124] font-['Poppins'] font-normal text-base leading-[26px">
+                  <Label htmlFor={option.id} className="opacity-60 text-[#083124] font-['Poppins'] font-normal text-base max-[500px]:text-[14px] max-[500px]:leading-[24px] leading-[26px">
                     {option.label}
                   </Label>
                 </div>
@@ -292,7 +292,7 @@ const handleClockClick = () => {
 
 
           {/* Submit Button */}
-          <Button className="mt-12 h-[50px] w-[163px] bg-[#083124] rounded-3xl cursor-pointer">
+          <Button className="mt-12 h-[50px] w-[163px] bg-[#083124] rounded-3xl cursor-pointer max-[500px]:mt-[30px]">
             <span className="font-medium font-['Poppins']  text-white text-base tracking-[0.24px] leading-[26px]">
               Submit
             </span>
@@ -316,7 +316,7 @@ const handleClockClick = () => {
         </div>
       </div>
              <div className="w-[1376px] h-full absolute top-0 right-0 z-0">
-                      <img src="/Vector-7.png" className="absolute top-[200px] max-[1500px]:top-[100px] max-[1000px]:py-[40px] -right-[200px] w-[1049px] h-[1050px]    z-0" alt="" />
+                      <img src="/Vector-7.png" className="absolute top-[200px] max-[1500px]:top-[100px] max-[1000px]:py-[40px] -right-[200px] w-[1049px] h-[1050px] max-[500px]:top-[50px]    z-0" alt="" />
                   <img src="/Photo.png" className="absolute top-[370px] right-[150px] max-[1750px]:right-[100px] max-[1500px]:right-[50px] max-[1500px]:top-[250px] w-[599px] h-[745px] rounded-[30px] max-[1330px]:hidden  object-cover" alt="" />
              </div>
     </section>

@@ -35,10 +35,10 @@ export default function FaqSubsection  () {
   return (
     <section className="w-full relative max-w-[1129px] mx-auto py-16 max-[1000px]:py-[40px] max-[1000px]:px-[25px] max-[1500px]:px-[50px]">
       <div className="text-center mb-16 max-[767px]:mb-10">
-        <h3 className="text-[#00b67a]  font-semibold max-[1000px]:text-[24px] max-[1000px]:leading-[34px] text-[32px] leading-[50px] [font-family:'Figtree']">
+        <h3 className="text-[#00b67a]  font-semibold max-[1000px]:text-[24px] max-[1000px]:leading-[34px] max-[500px]:text-[20px] max-[500px]:leading-[32px] text-[32px] leading-[50px] [font-family:'Figtree']">
           WHAT PEOPLE
         </h3>
-        <h2 className="text-[#083124] font-bold max-[1500px]:text-[56px] max-[1500px]:leading-[66px] max-[1000px]:text-[36px] max-[1000px]:leading-[48px] text-7xl leading-[82px] [font-family:'Figtree']">
+        <h2 className="text-[#083124] font-bold max-[1500px]:text-[56px] max-[1500px]:leading-[66px] max-[1000px]:text-[36px] max-[1000px]:leading-[48px] max-[500px]:text-[28px] max-[500px]:leading-[38px] text-7xl leading-[82px] [font-family:'Figtree']">
           Usually Asked
         </h2>
       </div>
@@ -56,15 +56,15 @@ export default function FaqSubsection  () {
               mb-4 rounded-[25px] max-[500px]:rounded-[15px] border border-solid border-[#d2eaef] ${index === 2 ? "bg-[#00b67a4c] bg-opacity-50 shadow-hover-drop-shadow" : ""}`}
           >
             <AccordionTrigger className=" px-10 py-6 hover:no-underline [&>svg]:hidden group max-[767px]:px-5 max-[330px]:px-3  max-[767px]:py-[15px]">
-              <div className="flex justify-between w-full">
-                <span className="[font-family:'Poppins'] font-medium text-[#083124] max-[767px]:text-[18px] max-[767px]:leading-[28px] text-xl tracking-[0] leading-[34px] text-left">
+              <div className="flex justify-between w-full gap-2">
+                <span className="[font-family:'Poppins'] font-medium text-[#083124] max-[767px]:text-[18px] max-[767px]:leading-[28px] max-[500px]:text-[14px] max-[500px]:leading-[24px] text-xl tracking-[0] leading-[34px] text-left">
                   {item.question}
                 </span>
-                <img  src='/faq-icon.svg' className="h-7 w-7 shrink-0 transition-transform duration-200 group-data-[state=open]:rotate-180" />
+                <img  src='/faq-icon.svg' className="h-7 w-7  max-[500px]:w-5 max-[500px]:h-5 shrink-0 transition-transform duration-200 group-data-[state=open]:rotate-180" />
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-10 pb-6">
-              <p className="font-['Hind_Vadodara'] font-normal text-base text-[#083124] ">
+              <p className="font-['Hind_Vadodara'] font-normal text-base text-[#083124] max-[500px]:text-[14px] max-[500px]:leading-[24px] ">
                 {item.answer}
               </p>
             </AccordionContent>

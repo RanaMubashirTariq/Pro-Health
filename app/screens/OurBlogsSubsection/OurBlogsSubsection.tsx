@@ -29,10 +29,10 @@ export default function OurBlogsSubsection() {
   return (
     <section className="relative w-full pt-[186px] pb-10 px-[150px] max-[1780px]:px-[100px] max-[1500px]:px-[50px] max-[1000px]:px-[25px] max-[1500px]:pt-[100px] max-[1000px]:pt-[40px]">
       <div className="flex flex-col items-center mb-16">
-        <h3 className="font-['Figtree'] max-[1000px]:text-[24px] max-[1000px]:leading-[34px] text-[32px] leading-[42px] font-semibold text-[#00b67a] ">
+        <h3 className="font-['Figtree'] max-[1000px]:text-[24px] max-[1000px]:leading-[34px] text-[32px] max-[500px]:text-[22px] max-[500px]:leading-[32px] leading-[42px] font-semibold text-[#00b67a] ">
           BLOG POSTS
         </h3>
-        <h2 className="font-bold max-[1500px]:text-[56px] max-[1000px]:text-[36px] max-[1500px]:leading-[66px] max-[1000px]:leading-[38px] text-7xl text-[#083124] font-['Figtree'] leading-[82px]">
+        <h2 className="font-bold max-[1500px]:text-[56px] max-[1000px]:text-[36px] max-[1500px]:leading-[66px] max-[1000px]:leading-[38px] max-[500px]:text-[28px] max-[500px]:leading-[38px] text-7xl text-[#083124] font-['Figtree'] leading-[82px]">
           Latest Update
         </h2>
       </div>
@@ -52,7 +52,7 @@ export default function OurBlogsSubsection() {
                   : "shadow-main-content-drop-shadow"
               }`}
             >
-              <div className="w-full h-[380px] max-[1500px]:h-[250px] max-[767px]:w-[100%] bg-cover bg-center">
+              <div className="w-full h-[380px] max-[1500px]:h-[250px] max-[767px]:w-[100%] max-[767px]:h-[200px]  bg-cover bg-center">
                 <img
                   src={post.imageUrl}
                   className="w-full h-full object-cover  rounded-xl"
@@ -60,7 +60,7 @@ export default function OurBlogsSubsection() {
                 />
               </div>
               <CardContent className="p-10 max-[800px]:p-5">
-                <div className="flex justify-between items-center mb-[28px]">
+                <div className="flex justify-between items-center mb-[28px] max-[767px]:mb-5">
                   <div className="opacity-50 font-['Poppins'] max-[1500px]:text-[14px] max-[1500px]:leading-[24px] font-normal text-[#083124] text-base leading-[26px]">
                     {post.date}
                   </div>
@@ -70,7 +70,7 @@ export default function OurBlogsSubsection() {
                     src="/Frame-218.png"
                   />
                 </div>
-                <h4 className="font-['Figtree'] max-[1500px]:text-[24px] max-[1500px]:leading-[38px] text-[32px] leading-[42px] text-[#083124] mb-[28px]">
+                <h4 className="font-['Figtree'] max-[1500px]:text-[24px] max-[1500px]:leading-[38px] text-[32px] max-[500px]:text-[22px] max-[500px]:leading-[32px] leading-[42px] text-[#083124] mb-[28px]">
                   {post.title}
                 </h4>
                 <div

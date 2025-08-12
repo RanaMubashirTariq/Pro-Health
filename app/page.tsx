@@ -65,7 +65,7 @@ export default function Home() {
       <div id="testimonials"> {/* Added ID */}
         <TestimonialsSubsection/>
       </div>
-      {/* <CtaSubsection/> */}
+      <CtaSubsection/>
       <div id="blog">
         <OurBlogsSubsection/>
       </div>
@@ -81,10 +81,10 @@ export default function Home() {
                                 {[...partnerLogos, ...partnerLogos, ...partnerLogos, ...partnerLogos, ...partnerLogos, ...partnerLogos].map((logo, index) => (
                               <div key={index} className="flex items-center">
                           <div
-                            className="relative flex items-center justify-center w-[274.75px] h-[89px] max-[1000px]:w-[200px] max-[1000px]:h-[60px]"
+                            className="relative flex items-center justify-center w-[274.75px] h-[89px] max-[1000px]:w-[200px] max-[1000px]:h-[60px] max-[500px]:w-[150px] max-[500px]:h-[40px]"
                           >
                             <img
-                              className="w-full h-full object-contain "
+                              className="w-full h-full object-cover "
                               alt={logo.alt}
                               src={logo.src}
                             />
@@ -101,10 +101,10 @@ export default function Home() {
                                                       {[...partnerLogos, ...partnerLogos, ...partnerLogos, ...partnerLogos, ...partnerLogos, ...partnerLogos].map((logo, index) => (
                                                     <div key={index} className="flex items-center">
                                                 <div
-                                                  className="relative flex items-center justify-center w-[274.75px] h-[89px] max-[1000px]:w-[200px] max-[1000px]:h-[60px]"
+                                                  className="relative flex items-center justify-center w-[274.75px] h-[89px] max-[1000px]:w-[200px] max-[1000px]:h-[60px] max-[500px]:w-[150px] max-[500px]:h-[40px]"
                                                 >
                                                   <img
-                                                    className="w-full h-full object-contain max-[1000px]:w-[200px] max-[1000px]:h-[60px]"
+                                                    className="w-full h-full object-cover "
                                                     alt={logo.alt}
                                                     src={logo.src}
                                                   />
@@ -121,10 +121,10 @@ export default function Home() {
                                 {[...partnerLogos, ...partnerLogos, ...partnerLogos, ...partnerLogos, ...partnerLogos, ...partnerLogos].map((logo, index) => (
                               <div key={index} className="flex items-center">
                           <div
-                            className="relative flex items-center justify-center w-[274.75px] h-[89px] max-[1000px]:w-[200px] max-[1000px]:h-[60px]"
+                            className="relative flex items-center justify-center w-[274.75px] h-[89px] max-[1000px]:w-[200px] max-[1000px]:h-[60px] max-[500px]:w-[150px] max-[500px]:h-[40px]"
                           >
                             <img
-                              className="w-full h-full object-contain "
+                              className="w-full h-full object-cover "
                               alt={logo.alt}
                               src={logo.src}
                             />

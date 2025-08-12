@@ -60,21 +60,21 @@ export default function FooterSubsection  () {
         {/* Main Footer Content */}
         <div className="flex flex-wrap justify-between gap-15 max-[500px]:gap-5 px-[150px] max-[1780px]:px-[100px] max-[1500px]:px-[50px] max-[1000px]:px-[25px] mt-24 max-[1500px]:mt-0">
           {/* Company Info Section */}
-          <div className="w-full md:w-[306px] mb-10">
-            <h3 className="font-['Poppins'] font-medium text-[#083124] text-xl leading-[30px] mb-[62px] max-[500px]:mb-[20px]">
+          <div className="w-full md:w-[306px] mb-10 max-[500px]:mb-5">
+            <h3 className="font-['Poppins'] font-medium text-[#083124] text-xl leading-[30px] mb-[62px] max-[500px]:mb-[20px] max-[500px]:text-[18px] max-[500px]:leading-[28px] max-[500px]:w-[200px]">
               ProHealth Medical &amp; Healthcare Center
             </h3>
 
             <div className="flex items-center gap-5 mb-3">
               <img src='/location.png' className="w-[18px] h-[18px] text-[#083124]" />
-              <p className="font-['Poppins'] font-normal text-[#083124] text-base leading-[26px]">
+              <p className="font-['Poppins'] font-normal text-[#083124] text-base leading-[26px] max-[500px]:text-[14px] max-[500px]:leading-[24px]">
                 123 Anywhere St., Any City 12345
               </p>
             </div>
 
             <div className="flex items-center gap-5 mb-3">
               <img src='/call.png' className="w-[18px] h-[18px] text-[#083124]" />
-              <p className="font-['Poppins'] font-normal text-[#083124] text-base leading-[26px]">
+              <p className="font-['Poppins'] font-normal text-[#083124] text-base leading-[26px] max-[500px]:text-[14px] max-[500px]:leading-[24px]">
                 123-456-7890
               </p>
             </div>
@@ -82,7 +82,7 @@ export default function FooterSubsection  () {
             <div className="flex items-center gap-5">
               <img src='/sms.png' className="w-[18px] h-[18px] text-[#083124]" />
               <a
-                className="font-['Poppins'] font-normal text-[#083124] text-base leading-[26px]"
+                className="font-['Poppins'] font-normal text-[#083124] text-base leading-[26px] max-[500px]:text-[14px] max-[500px]:leading-[24px]"
                 href="mailto:hellocallcenter@prohealth.com"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -93,7 +93,7 @@ export default function FooterSubsection  () {
           </div>
 
           {/* Navigation Links 1 */}
-          <div className="w-full max-w-[110px] md:w-auto mb-10">
+          <div className="w-full max-w-[110px] md:w-auto mb-10 max-[500px]:mb-5">
       <nav>
         <ul className="font-['Poppins'] font-normal text-[#083124] text-base leading-10">
           {navLinks1.map((link) => (
@@ -112,7 +112,7 @@ export default function FooterSubsection  () {
     </div>
 
           {/* Navigation Links 2 */}
-          <div className="w-full max-w-[180px] md:w-auto mb-10">
+          <div className="w-full max-w-[180px] md:w-auto mb-10 max-[500px]:mb-5">
       <nav>
         <ul className="font-['Poppins'] font-normal text-[#083124] text-base leading-10">
           {navLinks2.map((link) => (
@@ -131,21 +131,21 @@ export default function FooterSubsection  () {
     </div>
           {/* Subscription Section */}
           <div className="w-full md:w-[531px] mb-10">
-            <h2 className="font-['Figtree'] font-bold text-[#083124] text-[42px] max-[1000px]:text-[32px] max-[1000px]:leading-[42px]  leading-[52px] mb-3">
+            <h2 className="font-['Figtree'] font-bold text-[#083124] text-[42px] max-[1000px]:text-[32px] max-[1000px]:leading-[42px]  leading-[52px] mb-3 max-[500px]:text-[26px] max-[500px]:leading-[36px]">
               Be Our Subscribers
             </h2>
-            <p className="font-['Poppins'] font-normal text-[#083124] text-base leading-[26px] mb-6">
+            <p className="font-['Poppins'] font-normal text-[#083124] text-base leading-[26px] mb-6 max-[500px]:text-[14px] max-[500px]:leading-[24px]">
               to get the latest news about health from our experts
             </p>
 
-            <Card className="w-full border border-solid border-[#08312480] rounded-[36px] p-0 bg-transparent">
+            <Card className="w-full border border-solid border-[#08312480] rounded-[36px] p-0 bg-transparent max-[500px]:rounded-[25px]">
               <div className="flex items-center p-3.5">
                 <Input
-                  className="flex-1 border-none shadow-none font-['Poppins'] text-base text-[#083124] opacity-60 placeholder:text-[#083124] placeholder:opacity-60 focus-visible:ring-0"
+                  className="flex-1 border-none shadow-none font-['Poppins'] text-base text-[#083124] opacity-60 placeholder:text-[#083124] placeholder:opacity-60 focus-visible:ring-0 max-[500px]:text-[14px] max-[500px]:leading-[24px]"
                   placeholder="example@email.com"
                 />
-                <Button className="w-[163px] h-[50px] max-[500px]:w-[120px] bg-[#083124] rounded-3xl cursor-pointer">
-                  <span className="font-['Poppins'] font-medium text-white text-base tracking-[0.24px] mr-2">
+                <Button className="w-[163px] h-[50px]  bg-[#083124] rounded-3xl cursor-pointer max-[500px]:h-[40px] max-[500px]:w-[110px]">
+                  <span className="font-['Poppins'] font-medium text-white text-base tracking-[0.24px] mr-2 max-[500px]:text-[14px] max-[500px]:leading-[24px]">
                     Submit
                   </span>
                   <img
@@ -163,7 +163,7 @@ export default function FooterSubsection  () {
         <div className="w-full h-[102px] bg-[#083124] mt-10">
           <div className="flex justify-between items-center max-[767px]:flex-wrap max-[767px]:justify-center h-full px-[150px] max-[1780px]:px-[100px] max-[1500px]:px-[50px] max-[1000px]:px-[25px]">
             <div className="flex items-center gap-6 max-[767px]:justify-center">
-              <span className="font-['Inter'] font-normal text-white text-base">
+              <span className="font-['Inter'] font-normal text-white text-base max-[500px]:text-[14px] max-[500px]:leading-[24px]">
                 Follow Us
               </span>
                    <div className="flex justify-between w-[155px] h-5">
@@ -174,7 +174,7 @@ export default function FooterSubsection  () {
                         <img className="w-5 h-5 object-cover cursor-pointer transform transition-transform duration-300 hover:scale-90" src='/instagram.png' alt="Social media" />
                    </div>
             </div>
-            <div className="font-['Poppins'] font-normal text-white text-base opacity-50 max-[767px]:text-center">
+            <div className="font-['Poppins'] font-normal text-white text-base opacity-50 max-[767px]:text-centercmax-[500px]:text-[14px] max-[500px]:leading-[24px] max-[500px]:text-center">
               Copyright © 2024 Pro Health. All rights reserved.
             </div>
           </div>
