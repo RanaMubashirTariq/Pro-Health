@@ -49,7 +49,7 @@ export default function FaqSubsection  () {
             key={`faq-${index}`}
             value={`item-${index}`}
             className={`group transition-all duration-300 ease-in-out
-                        data-[state=open]:bg-[#00B67A]
+                        data-[state=open]:bg-[#00B67A]/30
                         data-[state=open]:ml-[55px]
                         max-[1100px]:data-[state=open]:ml-[15px]
                         w-full max-w-[1074px]
