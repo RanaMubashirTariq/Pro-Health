@@ -32,7 +32,7 @@ export default function TestimonialsSubsection  () {
   ];
 
   return (
-    <section className="w-full max-w-[1630px] mx-[150px] max-[1800px]:mx-0  max-[1780px]:mr-[100px] max-[1500px]:mr-[50px]    max-[1780px]:ml-[100px] max-[1500px]:ml-[50px] max-[1000px]:ml-[25px]  pb-[199px] max-[1500px]:pb-[100px] max-[1000px]:pb-[60px]  max-[767px]:pb-[100px]  relative">
+    <section className="w-full max-w-[1630px] mx-[150px] max-[1800px]:mx-0  max-[1780px]:mr-[100px] max-[1500px]:mr-[50px]    max-[1780px]:ml-[100px] max-[1500px]:ml-[50px] max-[1000px]:ml-[25px]  pb-[199px] max-[1500px]:pb-[100px] max-[1000px]:pb-[60px]  max-[767px]:pb-[60px] max-[365px]:pb-[80px]  relative">
       {/* Section Header */}
       <div className="flex flex-col items-center mb-16 max-[1000px]:mb-[40px] max-[767px]:mr-[40px]">
         <h2 className="font-['Figtree'] max-[1500px]:text-[56px] max-[1500px]:leading-[66px] font-bold text-[#083124] text-7xl max-[1000px]:text-[36px] max-[1000px]:leading-[48px] max-[500px]:text-[28px] max-[500px]:leading-[38px]   tracking-[0] leading-[82px]">
@@ -120,8 +120,31 @@ export default function TestimonialsSubsection  () {
               </div>
             </div>
           </div>
+
+    
         </div>
+        
       </div>
+      <div className=" hidden max-[1100px]:block w-[80%] max-[500px]:w-[80%]  max-[1100px]:mt-20  relative ">
+              <div className="relative h-[211px] ml-[264px] max-[900px]:ml-[164px] max-[767px]:ml-[114px] max-[500px]:ml-[60px]">
+                <img
+                  className="absolute w-[50px] h-[37px] max-[767px]:w-10  -left-[88px] max-[500px]:left-[-50px] -top-8"
+                  alt="Quote"
+                  src="/vector.svg"
+                />
+                <p className="font-['Poppins'] font-normal text-[#083124] text-xl max-[1000px]:text-lg max-[1000px]:leading-[26px] max-[767px]:text-sm max-[767px]:leading-[24px] tracking-[0] leading-[30px] opacity-50 mt-10">
+                  I recently had to bring my child to ProHealth for a minor
+                  injury, and I was so impressed with the care he received. The
+                  pediatrician was great with him and made him feel at ease, and
+                  the entire staff was kind and attentive.
+                </p>
+                <img
+                  className="w-24 h-[17px] mt-4"
+                  alt="Rating"
+                  src="/name.png"
+                />
+              </div>
+            </div>
     </section>
   );
 };

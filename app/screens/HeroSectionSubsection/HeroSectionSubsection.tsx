@@ -77,10 +77,10 @@ const CustomDropdown = ({
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="relative w-full max-w-[186px] max-[1000px]:max-w-full z-20">
+    <div className="relative w-full max-w-[186px] max-[767px]:max-w-[150px] max-[1000px]:max-w-full z-20">
       <div
         onClick={() => setOpen(!open)}
-        className=" z-10 bg-transparent font-['Poppins'] font-normal opacity-60 text-[#274760] text-[20px] leading-[26px] border-none rounded-[10px]  py-1 cursor-pointer flex justify-between items-center gap-10"
+        className=" z-10 bg-transparent font-['Poppins'] font-normal opacity-60 text-[#274760] text-[20px] max-[1000px]:text-lg max-[767px]:text-base max-[767px]:leadig-[22px] leading-[26px] border-none rounded-[10px]  py-1 cursor-pointer flex justify-between items-center gap-10"
       >
         <span>{selected}</span>
         <svg
@@ -101,7 +101,7 @@ const CustomDropdown = ({
                 setSelected(option);
                 setOpen(false);
               }}
-              className="px-4 py-2 opacity-60 hover:bg-[#083124] hover:text-white cursor-pointer  text-[#274760] font-['Poppins'] font-normal  text-[20px] leading-[26px] max-[500px]:py-3"
+              className="px-4 py-2 opacity-60 hover:bg-[#083124] hover:text-white cursor-pointer  text-[#274760] font-['Poppins'] font-normal  text-[20px] max-[1000px]:text-lg max-[767px]:text-base max-[767px]:leading-[22px] leading-[26px] max-[500px]:py-3"
             >
               {option}
             </li>
@@ -119,13 +119,18 @@ const CustomDropdown = ({
 
   return (
     <section className="relative w-full h-[1203px] max-[1500px]:h-[900px] max-[1100px]:h-[1000px] max-[1022px]:h-auto ">
-      <div className="relative w-full h-[1097px] max-[1500px]:h-[800px] max-[1022px]:h-[450px] max-[767px]:h-auto bg-custom-gradient pb-[30px] ">
-                      <img src="/Vector-3.png" className="absolute bottom-0 left-0 w-[623px] h-[655px] z-0 max-[767px]:w-[400px] max-[767px]:h-[500px] max-[767px]:top-[50px] max-[1022px]:w-[400px] max-[500px]:w-[200px] max-[1022px]:h-[350px] max-[1022px]:top-[100px]" alt="" />
-               <img src="/Vector-2.png" className="absolute -top-[200px] right-0 w-[623px] h-[655px] z-0 max-[767px]:w-[400px] max-[767px]:h-[500px] max-[767px]:-top-[300px] max-[1022px]:w-[400px] max-[1022px]:h-[500px] max-[1022px]:-top-[200px]" alt="" />
-               <img src="/Vector-1.png" className="absolute top-[50px] -right-[200px] w-[872px] h-[1030px]  z-0 max-[767px]:w-[400px] max-[767px]:h-[500px] max-[767px]:-top-[30px] max-[1022px]:w-[600px] max-[1022px]:h-[600px] max-[1022px]:top-[50px]" alt="" />
+      <div className="relative w-full h-[1097px] max-[1500px]:h-[800px] max-[1022px]:h-[550px] max-[767px]:h-[500px] bg-custom-gradient pb-[30px] ">
+                      <img src="/Vector-3.png" className="absolute bottom-0 left-0 w-[623px] h-[655px] z-0 max-[767px]:w-[300px] max-[767px]:h-[450px] max-[767px]:top-[50px] max-[1022px]:w-[400px] max-[500px]:w-[200px] max-[1022px]:h-[350px] max-[1022px]:top-[100px]" alt="" />
+               <img src="/Vector-2.png" className="absolute -top-[200px] right-0 w-[623px] h-[655px] z-0 max-[767px]:w-[400px] max-[767px]:h-[600px] max-[767px]:-top-[300px] max-[500px]:w-[300px] max-[500px]:h-[400px] max-[500px]:top-[-200px] max-[1022px]:w-[400px] max-[1022px]:h-[500px] max-[1022px]:-top-[200px]" alt="" />
+               <img src="/Vector-1.png" className="absolute top-[50px] -right-[200px] w-[872px] h-[1030px]  z-0 max-[767px]:w-[400px] max-[767px]:h-[600px] max-[767px]:top-[100px] max-[500px]:w-[300px] max-[767px]:h-[400px] max-[1022px]:w-[600px] max-[1022px]:h-[600px] max-[1022px]:top-[50px]" alt="" />
         {/* Background image would go here */}
          <div className="w-full h-auto bg-[url('/blur-back.jpg')]"/>
         {/* Navigation */}
+
+
+
+
+
  <div className="w-full z-51   px-[150px] max-[1780px]:px-[100px] max-[1500px]:px-[50px] max-[1000px]:px-[25px] pt-[59px] max-[1000px]:pt-[30px] flex justify-between items-center ">
       <div className="w-full flex items-center gap-[124px]">
         <div className="w-[173px] h-[28px] max-[767px]:w-[130px]">
@@ -133,7 +138,7 @@ const CustomDropdown = ({
         </div>
 
         <div
-          className={`gap-[50px] flex max-[1250px]:absolute max-[1250px]:top-[100px] max-[1250px]:left-0 max-[1250px]:w-full max-[1250px]:bg-white max-[1250px]:flex-col max-[1250px]:items-center max-[1250px]:py-6 max-[1250px]:gap-6 z-50 transition-all duration-300 ${
+          className={`gap-[50px] flex max-[1250px]:absolute max-[1250px]:top-[80px] max-[1250px]:right-3 max-[1250px]:w-[150px] rounded-xl max-[1250px]:bg-[#eafff8] max-[1250px]:flex-col max-[1250px]:items-center max-[1250px]:py-6 max-[1250px]:gap-6 z-50 transition-all duration-300 ${
             isMenuOpen ? "max-[1250px]:flex" : "max-[1250px]:hidden"
           }`}
         >
@@ -141,7 +146,7 @@ const CustomDropdown = ({
   <div
     key={index}
     onClick={() => handleSmoothScroll(item.id)}
-    className={`font-['Poppins'] text-base leading-[26px] cursor-pointer ${
+    className={`font-['Poppins'] text-base max-[767px]:text-sm max-[767px]:leading-[20px] leading-[26px] cursor-pointer ${
       activeMenu === item.id ? "text-[#083124] font-semibold" : "text-[#083124] font-normal"
     }`}
   >
@@ -207,19 +212,25 @@ const CustomDropdown = ({
 
         {/* Booking Section */}
       </div>
-           <Card className=" absolute top-[991px] max-[1500px]:top-[720px] max-[1022px]:top-[520px] max-[1022px]:hidden z-10 left-1/2 -translate-x-1/2    w-full max-w-[1620px] max-[1500px]:max-w-[1320px] max-[1500px]:max-w-[1220px] max-[1650px]:max-w-[1450px] max-[1650px]:mr-[40px] max-[1200px]:max-w-[1050px] max-[1100px]:max-w-[900px]   h-[212px] max-[1100px]:h-auto bg-[#eafff8] rounded-[15px] [box-shadow:0px_4px_21px_1px_#307BC41A] border-none">
+
+
+
+       
+      <Card className=" absolute top-[991px] max-[1500px]:top-[720px] max-[1022px]:top-[480px] max-[767px]:top-[360px]  z-10 left-1/2 -translate-x-1/2    w-full max-w-[1620px] max-[1500px]:max-w-[1320px]
+       max-[1500px]:max-w-[1220px] max-[1650px]:max-w-[1450px] max-[1650px]:mr-[40px] max-[1200px]:max-w-[1050px] max-[1100px]:max-w-[900px] max-[1022px]:max-w-[700px] max-[767px]:w-[490px] max-[500px]:w-[350px] max-[365px]:w-[280px] h-[212px] max-[1100px]:h-auto bg-[#eafff8]
+        rounded-[15px] [box-shadow:0px_4px_21px_1px_#307BC41A] border-none ">
           <CardContent className="flex items-center justify-center h-full p-0 ">
-            <div className="flex items-center w-full justify-between px-[114px] max-[1500px]:px-[50px] max-[500px]:px-[25px]  max-[1100px]:flex-wrap  max-[1100px]:justify-between max-[767px]:flex-col max-[1100px]:items-start  max-[1100px]:gap-[30px] max-[1100px]:py-[30px]">
+            <div className="flex items-center w-full justify-between px-[114px] max-[1500px]:px-[50px] max-[767px]:px-[20px]  max-[1100px]:flex-wrap  max-[1100px]:justify-between  max-[1100px]:items-start  max-[1100px]:gap-[30px] max-[1100px]:py-[30px] max-[500px]:flex-col">
               {bookingOptions.map((option, index) => (
                 <div key={index} className="flex items-center gap-6">
                   <img
-                    className="w-[70px] h-[70px]"
+                    className="w-[70px] h-[70px] max-[767px]:w-12 max-[767px]:h-12"
                     alt={`${option.label} Icon`}
                     src={option.icon}
                   />
 
                   <div className="flex flex-col">
-                    <span className="font-['Poppins'] font-semibold text-dark-blue text-base leading-[26px] text-[#274760]">
+                    <span className="font-['Poppins'] font-semibold text-dark-blue text-base max-[767px]:text-sm max-[767px]:leadig-[22px] leading-[26px] text-[#274760]">
                       {option.label}
                     </span>
 
@@ -230,7 +241,7 @@ const CustomDropdown = ({
                       setSelected={setToCity}
         />
                     ) : (
-                      <span className="font-['Poppins'] font-normal text-[#274760] text-xl leading-[26px] opacity-60 mt-1 text-[#274760]">
+                      <span className="font-['Poppins'] font-normal text-[#274760] text-xl max-[767px]:text-base max-[767px]:leadig-[22px] leading-[26px] opacity-60 mt-1 text-[#274760]">
                         {option.value}
                       </span>
                     )}
@@ -239,7 +250,7 @@ const CustomDropdown = ({
               ))}
 
               <Button className="w-[163px] h-[50px] bg-[#64cfa9] rounded-3xl  max-[1100px]:mr-[50px]">
-                <span className="font-['Poppins'] font-medium text-[#eafff7] text-base tracking-[0.24px] leading-[26px]">
+                <span className="font-['Poppins'] font-medium text-[#eafff7] text-base max-[767px]:text-sm max-[767px]:leadig-[22px] tracking-[0.24px] leading-[26px]">
                   Book Now
                 </span>
                  <img src="/right-arrow.png" className="w-[14px] h-[10px]" alt="" />

@@ -36,7 +36,7 @@ export default function OurValuesSubsection() {
   ];
 
   return (
-    <section className="relative w-full mt-[300px] max-[1500px]:mt-[100px] max-[1000px]:mt-[60px] max-[767px]:mt-10 flex flex-col gap-[72px] max-[1500px]:gap-[50px]">
+    <section className="relative w-full mt-[300px] max-[1500px]:mt-[100px] max-[1000px]:mt-[220px] max-[767px]:mt-[100px] max-[500px]:mt-[300px] flex flex-col gap-[72px] max-[1500px]:gap-[50px]">
       <h2 className="text-center font-bold text-[72px] max-[1500px]:text-[56px] max-[1500px]:leading-[66px] max-[1022px]:text-[36px] max-[500px]:text-[28px] max-[500px]:leading-[38px]    max-[1022px]:leading-[56px] leading-[82px] font-['Figtree'] text-[#083124]">
         Our Values
       </h2>
