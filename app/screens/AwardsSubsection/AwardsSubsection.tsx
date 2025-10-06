@@ -36,7 +36,7 @@ export default function AwardsSubsection  () {
           Awards
         </h2>
 
-        <div className="flex items-center justify-center  max-[1500px]:flex-wrap gap-5 max-[1500px]:gap-[100px] max-[1400px]:gap-5  max-[1000px]:gap-[20px]   w-full mx-auto">
+        <div className="flex items-center justify-center  max-[1500px]:flex-wrap gap-5 max-[1500px]:gap-[120px] max-[1300px]:gap-10  max-[1000px]:gap-[20px]   w-full mx-auto">
           {awards.map((award, index) => (
             <Card
               key={`award-${index}`}
