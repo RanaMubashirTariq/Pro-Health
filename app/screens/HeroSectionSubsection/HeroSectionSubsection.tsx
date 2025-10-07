@@ -14,6 +14,7 @@ export default function HeroSectionSubsection  () {
   const [activeMenu, setActiveMenu] = useState("/");
     const [City, setToCity] = useState("Cardiology");
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [showSearch, setShowSearch] = useState(false);
             
 const menuItems = [
   { name: "Home", id: "/" },
@@ -136,11 +137,17 @@ const CustomDropdown = ({
         <div className="w-[173px] h-[28px] max-[767px]:w-[130px]">
           <img src="/logo.svg" alt="" className="w-full h-full object-contain" />
         </div>
+        {/* Overlay */}
+{isMenuOpen && (
+  <div
+    onClick={() => setIsMenuOpen(false)}
+    className="fixed inset-0 bg-black/40 backdrop-blur-sm z-[998]"
+  ></div>
+)}
+
 
         <div
-          className={`gap-[50px] flex max-[1250px]:absolute max-[1250px]:top-[100px] max-[767px]:top-[80px] max-[1250px]:right-3 max-[1250px]:w-[150px] rounded-xl max-[1250px]:bg-[#eafff8] max-[1250px]:flex-col max-[1250px]:items-center max-[1250px]:py-6 max-[1250px]:gap-6 z-50 transition-all duration-300 ${
-            isMenuOpen ? "max-[1250px]:flex" : "max-[1250px]:hidden"
-          }`}
+          className="gap-[50px] flex   z-50 transition-all duration-300 max-[1020px]:hidden"
         >
      {menuItems.map((item, index) => (
   <div
@@ -156,8 +163,31 @@ const CustomDropdown = ({
         </div>
       </div>
 
-      <div className="relative flex items-center justify-between w-[107px]">
-        <img className="w-[29.34px] h-[29.34px] max-[767px]:w-[25px] max-[767px]:h-[25px]" src="/Search.png" alt="Icon" />
+      <div className="relative flex items-center justify-between w-[107px] max-[500px]:w-[80px]">
+      <div className="relative flex items-center z-[51] cursor-pointer">
+  {/* Search Icon */}
+  <img
+    src="/Search.png"
+    alt="Search"
+    onClick={() => setShowSearch(!showSearch)}
+    className="w-[29.34px] h-[29.34px] max-[767px]:w-[25px] max-[767px]:h-[25px] relative z-11"
+  />
+
+  {/* Expanding Input on click */}
+  <input
+    type="text"
+    placeholder="Search..."
+    className={`
+      absolute right-[-10px] ml-2
+      border-none outline-none rounded-[45px]
+      transition-all duration-300
+      pl-5 pr-3 py-1 h-[41.25px]
+      bg-[#eafff8] text-[#083023] text-sm placeholder:text-[#083023] z-0
+      ${showSearch ? "w-[180px] max-[500px]:w-[150px] opacity-100" : "w-0 opacity-0 pointer-events-none"}
+    `}
+  />
+</div>
+
         <div onClick={() => setIsMenuOpen(!isMenuOpen)} className="cursor-pointer block">
           <img className="w-[29.34px] h-[29.34px] max-[767px]:w-[25px] max-[767px]:h-[25px] absolute right-0 top-0 z-51" src="/menu.png" alt="Menu Toggle" />
         </div>
@@ -258,6 +288,44 @@ const CustomDropdown = ({
             </div>
           </CardContent>
         </Card>
+
+
+
+        {/* Drawer */}
+<div
+  className={`fixed top-0 right-0 h-full w-[300px] bg-white shadow-2xl z-[999] 
+              transition-transform duration-300 ease-in-out 
+              ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}
+>
+  <div className="flex justify-end p-4">
+    <button
+      onClick={() => setIsMenuOpen(false)}
+      className="text-2xl font-bold text-gray-700"
+    >
+      ✕
+    </button>
+  </div>
+
+  <nav className="flex flex-col items-start gap-6 p-6">
+    {menuItems.map((item, index) => (
+      <div
+        key={index}
+        onClick={() => {
+          handleSmoothScroll(item.id);
+          setIsMenuOpen(false); // close drawer after clicking
+        }}
+        className={`cursor-pointer font-['Poppins'] text-lg ${
+          activeMenu === item.id
+            ? "text-[#083124] font-semibold"
+            : "text-gray-700"
+        }`}
+      >
+        {item.name}
+      </div>
+    ))}
+  </nav>
+</div>
+
     </section>
   );
 };
