@@ -60,7 +60,7 @@ export default function FaqSubsection  () {
                 <span className="[font-family:'Poppins'] font-medium text-[#083124] max-[767px]:text-[18px] max-[767px]:leading-[28px] max-[500px]:text-[14px] max-[500px]:leading-[24px] text-xl tracking-[0] leading-[34px] text-left">
                   {item.question}
                 </span>
-                <img  src='/faq-icon.svg' className="h-7 w-7  max-[500px]:w-5 max-[500px]:h-5 shrink-0 transition-transform duration-200 group-data-[state=open]:rotate-180" />
+                <img  src='/faq-icon.svg' className="cursor-pointer h-7 w-7  max-[500px]:w-5 max-[500px]:h-5 shrink-0 transition-transform duration-200 group-data-[state=open]:rotate-180" />
               </div>
             </AccordionTrigger>
             <AccordionContent className="px-10 pb-6">

@@ -45,7 +45,7 @@ export default function OurValuesSubsection() {
         {valueCards.map((card, index) => (
           <Card
             key={index}
-            className="group bg-[#64cfa91a] rounded-[25px] max-[800px]:w-[100%] max-[500px]:w-[100%]  w-[390px] max-[1400px]:w-[355px]  h-[417px] max-[1250px]:w-[280px] max-[1250px]:h-auto [box-shadow:0px_4px_21px_1px_#307BC41A] border-none transition-all duration-300 hover:-mt-[44px] max-[767px]:hover:mt-0"
+            className="cursor-pointer group bg-[#64cfa91a] rounded-[25px] max-[800px]:w-[100%] max-[500px]:w-[100%]  w-[390px] max-[1400px]:w-[355px]  h-[417px] max-[1250px]:w-[280px] max-[1250px]:h-auto [box-shadow:0px_4px_21px_1px_#307BC41A] border-none transition-all duration-300 hover:-mt-[44px] max-[767px]:hover:mt-0"
           >
             <CardContent className="p-0">
               <div className="relative p-6  py-[70px] px-[47px] z-50 max-[1250px]:py-[30px] max-[1250px]:px-[20px]">

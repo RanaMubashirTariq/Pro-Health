@@ -254,7 +254,7 @@ const CustomDropdown = ({
               {bookingOptions.map((option, index) => (
                 <div key={index} className="flex items-center gap-6">
                   <img
-                    className="w-[70px] h-[70px] max-[767px]:w-12 max-[767px]:h-12"
+                    className="w-[70px] h-[70px] max-[767px]:w-12 max-[767px]:h-12 cursor-pointer"
                     alt={`${option.label} Icon`}
                     src={option.icon}
                   />
@@ -279,7 +279,7 @@ const CustomDropdown = ({
                 </div>
               ))}
 
-              <Button className="w-[163px] h-[50px] bg-[#64cfa9] rounded-3xl  max-[1100px]:mr-[50px]">
+              <Button className="w-[163px] h-[50px] bg-[#64cfa9] rounded-3xl  max-[1100px]:mr-[50px] cursor-pointer">
                 <span className="font-['Poppins'] font-medium text-[#eafff7] text-base max-[767px]:text-sm max-[767px]:leadig-[22px] tracking-[0.24px] leading-[26px]">
                   Book Now
                 </span>

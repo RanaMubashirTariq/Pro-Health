@@ -46,7 +46,7 @@ export default function OurBlogsSubsection() {
               key={post.id}
               onMouseEnter={() => setHoveredId(post.id)}
               onMouseLeave={() => setHoveredId(null)}
-              className={`transition-all duration-300 w-full max-w-[527px] max-[1000px]:max-w-[400px]  max-[800px]:max-w-[300px] max-[767px]:max-w-[525px] bg-[#00b67a1a] border-none [box-shadow:0px_4px_21px_1px_#307BC41A] rounded-[20px] overflow-hidden ${
+              className={`cursor-pointer transition-all duration-300 w-full max-w-[527px] max-[1000px]:max-w-[400px]  max-[800px]:max-w-[300px] max-[767px]:max-w-[525px] bg-[#00b67a1a] border-none [box-shadow:0px_4px_21px_1px_#307BC41A] rounded-[20px] overflow-hidden ${
                 isHighlighted
                   ? "shadow-hover-drop-shadow"
                   : "shadow-main-content-drop-shadow"

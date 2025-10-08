@@ -85,3 +85,10 @@ html {
 :target {
   scroll-margin-top: 100px; /* Adjust based on your header height */
 }
+
+
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari */
+}

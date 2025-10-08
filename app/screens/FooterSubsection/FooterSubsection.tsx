@@ -4,6 +4,7 @@ import React from "react";
 import { Button } from "../../components/ui/button";
 import { Card } from "../../components/ui/card";
 import { Input } from "../../components/ui/input";
+import Link from "next/link";
 
 export default function FooterSubsection  () {
 
@@ -167,11 +168,11 @@ export default function FooterSubsection  () {
                 Follow Us
               </span>
                    <div className="flex justify-between w-[155px] h-5">
-                        <img className="w-5 h-5 object-cover cursor-pointer transform transition-transform duration-300 hover:scale-90" src='/facebook.png' alt="Social media" />
-                        <img className="w-5 h-5 object-cover cursor-pointer transform transition-transform duration-300 hover:scale-90" src='/youtube.png' alt="Social media" />
-                        <img className="w-5 h-5 object-cover cursor-pointer transform transition-transform duration-300 hover:scale-90" src='/twitter.png' alt="Social media" />
-                        <img className="w-5 h-5 object-cover cursor-pointer transform transition-transform duration-300 hover:scale-90" src='/linkedin.png' alt="Social media" />
-                        <img className="w-5 h-5 object-cover cursor-pointer transform transition-transform duration-300 hover:scale-90" src='/instagram.png' alt="Social media" />
+                        <Link href='https://www.facebook.com/'><img className="w-5 h-5 object-cover cursor-pointer transform transition-transform duration-300 hover:scale-90" src='/facebook.png' alt="Social media" /></Link>
+                        <Link href='https://www.youtube.com/'><img className="w-5 h-5 object-cover cursor-pointer transform transition-transform duration-300 hover:scale-90" src='/youtube.png' alt="Social media" /></Link>
+                       <Link href='https://twitter.com/'> <img className="w-5 h-5 object-cover cursor-pointer transform transition-transform duration-300 hover:scale-90" src='/twitter.png' alt="Social media" /></Link>
+                        <Link href='https://www.linkedin.com/'><img className="w-5 h-5 object-cover cursor-pointer transform transition-transform duration-300 hover:scale-90" src='/linkedin.png' alt="Social media" /></Link>
+                        <Link href='https://www.instagram.com/'><img className="w-5 h-5 object-cover cursor-pointer transform transition-transform duration-300 hover:scale-90" src='/instagram.png' alt="Social media" /></Link>
                    </div>
             </div>
             <div className="font-['Poppins'] font-normal text-white text-base opacity-50 max-[767px]:text-centercmax-[500px]:text-[14px] max-[500px]:leading-[24px] max-[500px]:text-center">
